@@ -11,7 +11,7 @@ Visto che lavoreremo in tanti ai testi, abbiamo scritto una guida di stile con a
 
 1. **/logo/** - sorgenti del logo e la sua versione in formato PNG. Il logo ha lo sfondo in trasparenza; 
 2. **/cover-website/** - sorgenti delle cover da usare nel sito opendatafest.it e le immagini ad alta e media risoluzione; 
-3. **/cover-social/** - sorgenti delle cover da usare nei canali Social (Gruppi Facebook e profili personali, profili Twitter) e le immagini pronte per essere usate in formato JPG.
+3. **/cover-social/** - sorgenti delle cover da usare nei canali Social (Facebook: profilo personale e gruppi; Twitter: profili) e le immagini pronte per essere usate in formato JPG.
 
 ## Font utilizzato 
 Nel logo e nelle scritte di tutti i materiali ufficiali abbiamo usato il font [SymLogiDINs](https://fontlibrary.org/it/font/symlogidins): è rilasciato con licenza OFL (SIL Open Font License).
