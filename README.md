@@ -1,5 +1,10 @@
 # raduno17
-Un repo a supporto del raduno del 2017
+Un repo a supporto del raduno OpenDataFest 2017.
+
+## Kit comunicazione
+Se cerchi loghi, cover per i social, etc., questo è il posto giusto.
+[https://github.com/spaghetti-open-data/raduno17/tree/master/kit-comunicazione](https://github.com/spaghetti-open-data/raduno17/tree/master/kit-comunicazione)
+
 
 ## Info utili
 
