@@ -1,0 +1,450 @@
+@prefix sod17onto:  <http://www.spaghettiopendata.org/sod2017/ontology#> .
+@prefix nacer_div:  <http://stamina-project.org/codes/nacer2/division/> .
+@prefix schema:  <http://schema.org/> .
+@prefix org:  <http://www.w3.org/ns/org#> .
+@prefix sod17:  <http://www.spaghettiopendata.org/sod2017/resources#> .
+@prefix nacer_cls:  <http://stamina-project.org/codes/nacer2/class/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbpedia:  <http://dbpedia.org/resource/> .
+@prefix gr:  <http://purl.org/goodrelations/v1#> .
+@prefix nacer_grp:  <http://stamina-project.org/codes/nacer2/group/> .
+@prefix geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix dbpo:  <http://dbpedia.org/ontology/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix locn:  <http://www.w3.org/ns/locn#> .
+@prefix cpsv:  <http://purl.org/vocab/cpsv#> .
+
+sod17:OSP042101042001
+        rdf:type        schema:GovernmentOrganization ;
+        rdfs:label      "OSPEDALE DI TRENTO" ;
+        org:identifier  "OSP042101042001" ;
+        cpsv:provides   nacer_cls:86.10 ;
+        locn:address    sod17:27e70e96aeed95c992f892f216e7b708 ;
+        locn:location   sod17:1272995cd38a5c6998973db5ed46fdb2 ;
+        locn:location   dbpedia:Trentino ;
+        locn:geometry   sod17:27e70e96aeed95c992f892f216e7b708_geo .
+
+sod17:27e70e96aeed95c992f892f216e7b708
+        rdf:type          locn:Address ;
+        locn:fullAddress  "LARGO MEDAGLIE D ORO, 9, TRENTO, Trento (38122), Italy" ;
+        locn:postCode     "38122" .
+
+sod17:1272995cd38a5c6998973db5ed46fdb2
+        rdf:type             locn:Location ;
+        rdf:type             sod17onto:Comune ;
+        locn:geographicName  "TRENTO" .
+
+sod17:27e70e96aeed95c992f892f216e7b708_geo
+        rdf:type  locn:Geometry ;
+        geo:lat   "46.0560"^^xsd:double ;
+        geo:long  "11.1340"^^xsd:double .
+
+dbpedia:Trentino  rdfs:label  "Provincia autonoma di Trento" ;
+        rdf:type    dbpo:Province .
+
+sod17onto:Comune  rdfs:subClassOf  dbpo:Municipality ;
+        rdfs:seeAlso     dbpedia:Comune .
+
+sod17:OSP042101042004
+        rdf:type        schema:GovernmentOrganization ;
+        rdfs:label      "PRESIDIO OSPEDALIERO DI BORGO VALSUGANA" ;
+        org:identifier  "OSP042101042004" ;
+        cpsv:provides   nacer_cls:86.10 ;
+        locn:address    sod17:82344ddd03968668ddfa09cc0a82f277 ;
+        locn:location   sod17:6608b0b7963b704953719d65cc6477df ;
+        locn:location   dbpedia:Trentino ;
+        locn:geometry   sod17:82344ddd03968668ddfa09cc0a82f277_geo .
+
+sod17:82344ddd03968668ddfa09cc0a82f277
+        rdf:type          locn:Address ;
+        locn:fullAddress  "VIALE VICENZA 9, BORGO VALSUGANA, Trento (38051), Italy" ;
+        locn:postCode     "38051" .
+
+sod17:6608b0b7963b704953719d65cc6477df
+        rdf:type             locn:Location ;
+        rdf:type             sod17onto:Comune ;
+        locn:geographicName  "BORGO VALSUGANA" .
+
+sod17:82344ddd03968668ddfa09cc0a82f277_geo
+        rdf:type  locn:Geometry ;
+        geo:lat   "46.0568"^^xsd:double ;
+        geo:long  "11.4646"^^xsd:double .
+
+dbpedia:Trentino  rdfs:label  "Provincia autonoma di Trento" ;
+        rdf:type    dbpo:Province .
+
+sod17onto:Comune  rdfs:subClassOf  dbpo:Municipality ;
+        rdfs:seeAlso     dbpedia:Comune .
+
+sod17:OSP042101042005
+        rdf:type        schema:GovernmentOrganization ;
+        rdfs:label      "PRESIDIO OSPEDALIERO DI CLES" ;
+        org:identifier  "OSP042101042005" ;
+        cpsv:provides   nacer_cls:86.10 ;
+        locn:address    sod17:d3d7b697672dbcf6ef1d918cd6c32d21 ;
+        locn:location   sod17:ab5a771602c4ad3a0f7be6d78f2be6bf ;
+        locn:location   dbpedia:Trentino ;
+        locn:geometry   sod17:d3d7b697672dbcf6ef1d918cd6c32d21_geo .
+
+sod17:d3d7b697672dbcf6ef1d918cd6c32d21
+        rdf:type          locn:Address ;
+        locn:fullAddress  "VIALE DEGASPERI, 31, CLES, Trento (38023), Italy" ;
+        locn:postCode     "38023" .
+
+sod17:ab5a771602c4ad3a0f7be6d78f2be6bf
+        rdf:type             locn:Location ;
+        rdf:type             sod17onto:Comune ;
+        locn:geographicName  "CLES" .
+
+sod17:d3d7b697672dbcf6ef1d918cd6c32d21_geo
+        rdf:type  locn:Geometry ;
+        geo:lat   "46.3608"^^xsd:double ;
+        geo:long  "11.0323"^^xsd:double .
+
+dbpedia:Trentino  rdfs:label  "Provincia autonoma di Trento" ;
+        rdf:type    dbpo:Province .
+
+sod17onto:Comune  rdfs:subClassOf  dbpo:Municipality ;
+        rdfs:seeAlso     dbpedia:Comune .
+
+sod17:OSP042101042006
+        rdf:type        schema:GovernmentOrganization ;
+        rdfs:label      "OSPEDALE DI ROVERETO" ;
+        org:identifier  "OSP042101042006" ;
+        cpsv:provides   nacer_cls:86.10 ;
+        locn:address    sod17:dbfb4d631e45ea78e08724a5209eb90e ;
+        locn:location   sod17:9a42d054889aa07210c305e309de7e8a ;
+        locn:location   dbpedia:Trentino ;
+        locn:geometry   sod17:dbfb4d631e45ea78e08724a5209eb90e_geo .
+
+sod17:dbfb4d631e45ea78e08724a5209eb90e
+        rdf:type          locn:Address ;
+        locn:fullAddress  "CORSO VERONA, 4, ROVERETO, Trento (38068), Italy" ;
+        locn:postCode     "38068" .
+
+sod17:9a42d054889aa07210c305e309de7e8a
+        rdf:type             locn:Location ;
+        rdf:type             sod17onto:Comune ;
+        locn:geographicName  "ROVERETO" .
+
+sod17:dbfb4d631e45ea78e08724a5209eb90e_geo
+        rdf:type  locn:Geometry ;
+        geo:lat   "45.8818"^^xsd:double ;
+        geo:long  "11.0407"^^xsd:double .
+
+dbpedia:Trentino  rdfs:label  "Provincia autonoma di Trento" ;
+        rdf:type    dbpo:Province .
+
+sod17onto:Comune  rdfs:subClassOf  dbpo:Municipality ;
+        rdfs:seeAlso     dbpedia:Comune .
+
+sod17:OSP042101042007
+        rdf:type        schema:GovernmentOrganization ;
+        rdfs:label      "PRESIDIO OSPEDALIERO DI TIONE" ;
+        org:identifier  "OSP042101042007" ;
+        cpsv:provides   nacer_cls:86.10 ;
+        locn:address    sod17:4c2dded9f98f132bb7f22497e74cccf0 ;
+        locn:location   sod17:eecff9d96caa2c08f2f9a2aa7c75abb7 ;
+        locn:location   dbpedia:Trentino ;
+        locn:geometry   sod17:4c2dded9f98f132bb7f22497e74cccf0_geo .
+
+sod17:4c2dded9f98f132bb7f22497e74cccf0
+        rdf:type          locn:Address ;
+        locn:fullAddress  "VIA OSPEDALE, 11, TIONE DI TRENTO, Trento (38079), Italy" ;
+        locn:postCode     "38079" .
+
+sod17:eecff9d96caa2c08f2f9a2aa7c75abb7
+        rdf:type             locn:Location ;
+        rdf:type             sod17onto:Comune ;
+        locn:geographicName  "TIONE DI TRENTO" .
+
+sod17:4c2dded9f98f132bb7f22497e74cccf0_geo
+        rdf:type  locn:Geometry ;
+        geo:lat   "46.0413"^^xsd:double ;
+        geo:long  "10.7244"^^xsd:double .
+
+dbpedia:Trentino  rdfs:label  "Provincia autonoma di Trento" ;
+        rdf:type    dbpo:Province .
+
+sod17onto:Comune  rdfs:subClassOf  dbpo:Municipality ;
+        rdfs:seeAlso     dbpedia:Comune .
+
+sod17:OSP042101042010
+        rdf:type        schema:GovernmentOrganization ;
+        rdfs:label      "PRESIDIO OSPEDALIERO DI ARCO" ;
+        org:identifier  "OSP042101042010" ;
+        cpsv:provides   nacer_cls:86.10 ;
+        locn:address    sod17:d6e6eb43244ee2e117a7db02e5f06c2b ;
+        locn:location   sod17:9b9c1a4308f510d21e8ca1c614b4b74d ;
+        locn:location   dbpedia:Trentino ;
+        locn:geometry   sod17:d6e6eb43244ee2e117a7db02e5f06c2b_geo .
+
+sod17:d6e6eb43244ee2e117a7db02e5f06c2b
+        rdf:type          locn:Address ;
+        locn:fullAddress  "VIA CAPITELLI, 48, ARCO, Trento (38062), Italy" ;
+        locn:postCode     "38062" .
+
+sod17:9b9c1a4308f510d21e8ca1c614b4b74d
+        rdf:type             locn:Location ;
+        rdf:type             sod17onto:Comune ;
+        locn:geographicName  "ARCO" .
+
+sod17:d6e6eb43244ee2e117a7db02e5f06c2b_geo
+        rdf:type  locn:Geometry ;
+        geo:lat   "45.9192"^^xsd:double ;
+        geo:long  "10.8741"^^xsd:double .
+
+dbpedia:Trentino  rdfs:label  "Provincia autonoma di Trento" ;
+        rdf:type    dbpo:Province .
+
+sod17onto:Comune  rdfs:subClassOf  dbpo:Municipality ;
+        rdfs:seeAlso     dbpedia:Comune .
+
+sod17:OSP042101042014
+        rdf:type        schema:GovernmentOrganization ;
+        rdfs:label      "PRESIDIO OSPEDALIERO DI CAVALESE" ;
+        org:identifier  "OSP042101042014" ;
+        cpsv:provides   nacer_cls:86.10 ;
+        locn:address    sod17:fbe1457cb599f99547957f3cf2a6dbc7 ;
+        locn:location   sod17:577412c6e81505049f5d024a6d0695ac ;
+        locn:location   dbpedia:Trentino ;
+        locn:geometry   sod17:fbe1457cb599f99547957f3cf2a6dbc7_geo .
+
+sod17:fbe1457cb599f99547957f3cf2a6dbc7
+        rdf:type          locn:Address ;
+        locn:fullAddress  "VIA DOSSI 17, CAVALESE, Trento (38033), Italy" ;
+        locn:postCode     "38033" .
+
+sod17:577412c6e81505049f5d024a6d0695ac
+        rdf:type             locn:Location ;
+        rdf:type             sod17onto:Comune ;
+        locn:geographicName  "CAVALESE" .
+
+sod17:fbe1457cb599f99547957f3cf2a6dbc7_geo
+        rdf:type  locn:Geometry ;
+        geo:lat   "46.2884"^^xsd:double ;
+        geo:long  "11.4551"^^xsd:double .
+
+dbpedia:Trentino  rdfs:label  "Provincia autonoma di Trento" ;
+        rdf:type    dbpo:Province .
+
+sod17onto:Comune  rdfs:subClassOf  dbpo:Municipality ;
+        rdfs:seeAlso     dbpedia:Comune .
+
+sod17:OSP042101042015
+        rdf:type        org:FormalOrganization ;
+        rdfs:label      "OSPEDALE SAN CAMILLO" ;
+        org:identifier  "OSP042101042015" ;
+        cpsv:provides   nacer_cls:86.10 ;
+        locn:address    sod17:f00dd9dd7641204a35ae06231ec28e59 ;
+        locn:location   sod17:1272995cd38a5c6998973db5ed46fdb2 ;
+        locn:location   dbpedia:Trentino ;
+        locn:geometry   sod17:f00dd9dd7641204a35ae06231ec28e59_geo .
+
+sod17:f00dd9dd7641204a35ae06231ec28e59
+        rdf:type          locn:Address ;
+        locn:fullAddress  "VIA PODESTA GIOVANELLI 19, TRENTO, Trento (38122), Italy" ;
+        locn:postCode     "38122" .
+
+sod17:1272995cd38a5c6998973db5ed46fdb2
+        rdf:type             locn:Location ;
+        rdf:type             sod17onto:Comune ;
+        locn:geographicName  "TRENTO" .
+
+sod17:f00dd9dd7641204a35ae06231ec28e59_geo
+        rdf:type  locn:Geometry ;
+        geo:lat   "46.065474"^^xsd:double ;
+        geo:long  "11.131722"^^xsd:double .
+
+dbpedia:Trentino  rdfs:label  "Provincia autonoma di Trento" ;
+        rdf:type    dbpo:Province .
+
+sod17onto:Comune  rdfs:subClassOf  dbpo:Municipality ;
+        rdfs:seeAlso     dbpedia:Comune .
+
+sod17:OSP042101042016
+        rdf:type        gr:BusinessEntity ;
+        rdfs:label      "IST.RIAB.S.STEFANO-U.O. OSP. S.PANCRAZIO" ;
+        org:identifier  "OSP042101042016" ;
+        cpsv:provides   nacer_grp:86.9 ;
+        locn:address    sod17:cfd27dc53d032475114daf8ec32de8de ;
+        locn:location   sod17:9b9c1a4308f510d21e8ca1c614b4b74d ;
+        locn:location   dbpedia:Trentino ;
+        locn:geometry   sod17:cfd27dc53d032475114daf8ec32de8de_geo .
+
+sod17:cfd27dc53d032475114daf8ec32de8de
+        rdf:type          locn:Address ;
+        locn:fullAddress  "VIA D.CHIESA ,2, ARCO, Trento (38062), Italy" ;
+        locn:postCode     "38062" .
+
+sod17:9b9c1a4308f510d21e8ca1c614b4b74d
+        rdf:type             locn:Location ;
+        rdf:type             sod17onto:Comune ;
+        locn:geographicName  "ARCO" .
+
+sod17:cfd27dc53d032475114daf8ec32de8de_geo
+        rdf:type  locn:Geometry ;
+        geo:lat   "45.921304"^^xsd:double ;
+        geo:long  "10.882587"^^xsd:double .
+
+dbpedia:Trentino  rdfs:label  "Provincia autonoma di Trento" ;
+        rdf:type    dbpo:Province .
+
+sod17onto:Comune  rdfs:subClassOf  dbpo:Municipality ;
+        rdfs:seeAlso     dbpedia:Comune .
+
+sod17:OSP042101042018
+        rdf:type        gr:BusinessEntity ;
+        rdfs:label      "CASA DI CURA EREMO DI ARCO SRL" ;
+        org:identifier  "OSP042101042018" ;
+        cpsv:provides   nacer_div:87 ;
+        locn:address    sod17:ef430412814d616dd2c1f5562894b0fc ;
+        locn:location   sod17:9b9c1a4308f510d21e8ca1c614b4b74d ;
+        locn:location   dbpedia:Trentino ;
+        locn:geometry   sod17:ef430412814d616dd2c1f5562894b0fc_geo .
+
+sod17:ef430412814d616dd2c1f5562894b0fc
+        rdf:type          locn:Address ;
+        locn:fullAddress  "VIA XXI APRILE, 1, ARCO, Trento (38062), Italy" ;
+        locn:postCode     "38062" .
+
+sod17:9b9c1a4308f510d21e8ca1c614b4b74d
+        rdf:type             locn:Location ;
+        rdf:type             sod17onto:Comune ;
+        locn:geographicName  "ARCO" .
+
+sod17:ef430412814d616dd2c1f5562894b0fc_geo
+        rdf:type  locn:Geometry ;
+        geo:lat   "45.919481"^^xsd:double ;
+        geo:long  "10.870444"^^xsd:double .
+
+dbpedia:Trentino  rdfs:label  "Provincia autonoma di Trento" ;
+        rdf:type    dbpo:Province .
+
+sod17onto:Comune  rdfs:subClassOf  dbpo:Municipality ;
+        rdfs:seeAlso     dbpedia:Comune .
+
+sod17:OSP042101042019
+        rdf:type        gr:BusinessEntity ;
+        rdfs:label      "CASA DI CURA REGINA" ;
+        org:identifier  "OSP042101042019" ;
+        cpsv:provides   nacer_div:87 ;
+        locn:address    sod17:3288827815f812b615caf446f5626dbc ;
+        locn:location   sod17:9b9c1a4308f510d21e8ca1c614b4b74d ;
+        locn:location   dbpedia:Trentino ;
+        locn:geometry   sod17:3288827815f812b615caf446f5626dbc_geo .
+
+sod17:3288827815f812b615caf446f5626dbc
+        rdf:type          locn:Address ;
+        locn:fullAddress  "VIA POMERIO, 3, ARCO, Trento (38062), Italy" ;
+        locn:postCode     "38062" .
+
+sod17:9b9c1a4308f510d21e8ca1c614b4b74d
+        rdf:type             locn:Location ;
+        rdf:type             sod17onto:Comune ;
+        locn:geographicName  "ARCO" .
+
+sod17:3288827815f812b615caf446f5626dbc_geo
+        rdf:type  locn:Geometry ;
+        geo:lat   "45.916767"^^xsd:double ;
+        geo:long  "10.886541"^^xsd:double .
+
+dbpedia:Trentino  rdfs:label  "Provincia autonoma di Trento" ;
+        rdf:type    dbpo:Province .
+
+sod17onto:Comune  rdfs:subClassOf  dbpo:Municipality ;
+        rdfs:seeAlso     dbpedia:Comune .
+
+sod17:OSP042101042020
+        rdf:type        gr:BusinessEntity ;
+        rdfs:label      "CASA DI CURA SOLATRIX" ;
+        org:identifier  "OSP042101042020" ;
+        cpsv:provides   nacer_div:87 ;
+        locn:address    sod17:6f0d4accf7eaa14ef97f050628acb5d1 ;
+        locn:location   sod17:9a42d054889aa07210c305e309de7e8a ;
+        locn:location   dbpedia:Trentino ;
+        locn:geometry   sod17:6f0d4accf7eaa14ef97f050628acb5d1_geo .
+
+sod17:6f0d4accf7eaa14ef97f050628acb5d1
+        rdf:type          locn:Address ;
+        locn:fullAddress  "VIA BELLINI 11, ROVERETO, Trento (38068), Italy" ;
+        locn:postCode     "38068" .
+
+sod17:9a42d054889aa07210c305e309de7e8a
+        rdf:type             locn:Location ;
+        rdf:type             sod17onto:Comune ;
+        locn:geographicName  "ROVERETO" .
+
+sod17:6f0d4accf7eaa14ef97f050628acb5d1_geo
+        rdf:type  locn:Geometry ;
+        geo:lat   "45.898984"^^xsd:double ;
+        geo:long  "11.045548"^^xsd:double .
+
+dbpedia:Trentino  rdfs:label  "Provincia autonoma di Trento" ;
+        rdf:type    dbpo:Province .
+
+sod17onto:Comune  rdfs:subClassOf  dbpo:Municipality ;
+        rdfs:seeAlso     dbpedia:Comune .
+
+sod17:OSP042101042021
+        rdf:type        gr:BusinessEntity ;
+        rdfs:label      "CASA DI CURA SACRA FAMIGLIA" ;
+        org:identifier  "OSP042101042021" ;
+        cpsv:provides   nacer_div:87 ;
+        locn:address    sod17:a0e91b8d30d6446b25310dea19709a41 ;
+        locn:location   sod17:9b9c1a4308f510d21e8ca1c614b4b74d ;
+        locn:location   dbpedia:Trentino ;
+        locn:geometry   sod17:a0e91b8d30d6446b25310dea19709a41_geo .
+
+sod17:a0e91b8d30d6446b25310dea19709a41
+        rdf:type          locn:Address ;
+        locn:fullAddress  "VIA NAS, 4, ARCO, Trento (38062), Italy" ;
+        locn:postCode     "38062" .
+
+sod17:9b9c1a4308f510d21e8ca1c614b4b74d
+        rdf:type             locn:Location ;
+        rdf:type             sod17onto:Comune ;
+        locn:geographicName  "ARCO" .
+
+sod17:a0e91b8d30d6446b25310dea19709a41_geo
+        rdf:type  locn:Geometry ;
+        geo:lat   "45.917617"^^xsd:double ;
+        geo:long  "10.876268"^^xsd:double .
+
+dbpedia:Trentino  rdfs:label  "Provincia autonoma di Trento" ;
+        rdf:type    dbpo:Province .
+
+sod17onto:Comune  rdfs:subClassOf  dbpo:Municipality ;
+        rdfs:seeAlso     dbpedia:Comune .
+
+sod17:OSP042101042022
+        rdf:type        gr:BusinessEntity ;
+        rdfs:label      "CASA DI CURA VILLA BIANCA" ;
+        org:identifier  "OSP042101042022" ;
+        cpsv:provides   nacer_div:87 ;
+        locn:address    sod17:9a72d48408a4a30e4533b705215f2f96 ;
+        locn:location   sod17:1272995cd38a5c6998973db5ed46fdb2 ;
+        locn:location   dbpedia:Trentino ;
+        locn:geometry   sod17:9a72d48408a4a30e4533b705215f2f96_geo .
+
+sod17:9a72d48408a4a30e4533b705215f2f96
+        rdf:type          locn:Address ;
+        locn:fullAddress  "VIA PIAVE 78, TRENTO, Trento (38122), Italy" ;
+        locn:postCode     "38122" .
+
+sod17:1272995cd38a5c6998973db5ed46fdb2
+        rdf:type             locn:Location ;
+        rdf:type             sod17onto:Comune ;
+        locn:geographicName  "TRENTO" .
+
+sod17:9a72d48408a4a30e4533b705215f2f96_geo
+        rdf:type  locn:Geometry ;
+        geo:lat   "46.063077"^^xsd:double ;
+        geo:long  "11.126697"^^xsd:double .
+
+dbpedia:Trentino  rdfs:label  "Provincia autonoma di Trento" ;
+        rdf:type    dbpo:Province .
+
+sod17onto:Comune  rdfs:subClassOf  dbpo:Municipality ;
+        rdfs:seeAlso     dbpedia:Comune .

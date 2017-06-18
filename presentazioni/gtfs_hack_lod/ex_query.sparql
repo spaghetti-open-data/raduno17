@@ -1,0 +1,41 @@
+PREFIX gtfs: <http://vocab.gtfs.org/terms#>
+PREFIX abs: <http://abs.270a.info/dataset/>
+PREFIX math: <http://www.w3.org/2000/10/swap/math#>
+PREFIX xs: <http://www.w3.org/2001/XMLSchema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+prefix schema: <http://schema.org/>
+prefix dbpedia: <http://it.dbpedia.org/resource/>
+prefix geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#>
+prefix gtfs: <http://vocab.gtfs.org/terms#>
+prefix math: <http://www.w3.org/2005/xpath-functions/math#>
+
+SELECT DISTINCT *
+WHERE
+{
+  # The event
+  ?event
+     a schema:Event;
+     schema:address ?place
+  .
+
+  # Where does it take place?
+  ?place
+    geo:lat ?lat;
+    geo:long ?lng
+  .
+
+  # Match all the stops for the moment
+  ?stop
+    a gtfs:Stop;
+    geo:lat ?slat;
+    geo:long ?slng
+  .
+
+  # An now filter the stops by picking those having close enough ditance to the place
+  # Usual Euclid formula used to calculate the distances from place/stop coordinates
+  BIND ( (?lat - xsd:float ( ?slat )) AS ?latd )
+  BIND ( (?lng - xsd:float ( ?slng )) AS ?lngd )
+  BIND ( math:sqrt ( ?latd*?latd + ?lngd*?lngd ) AS ?d )
+  FILTER ( ?d < 0.005 )
+}
+LIMIT 25

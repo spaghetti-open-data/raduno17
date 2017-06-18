@@ -1,0 +1,6 @@
+/* JS */ gapi.loaded_1(function(_){var window=this;
+_.Sm.p3("ytsubscribe",function(a,c){var f=_.Sm.Vb;f&&_.Sm.u6({role:"ytsubscribe",iframe:f,data:c},{role:"ytrelay",iframe:a})},void 0,_.Vz);
+var sO={onytevent:!0},IU=["https://www.youtube.com"],JU=["http://www.youtube.com","https://www.youtube.com"];var KU=function(){this.B8=this.d$=null};KU.prototype.Oga=function(){var a=window.location.href.split("#")[0],c=_.Sm.Vb,c=c&&c.Pq();return{eurl:a,notificationsPipeSupported:-1!=_.xd.call(JU,c)}};KU.prototype.Lha=function(a){var c=_.Sm.Vb;if(c)try{c.send("ytsubscribe-msg",a,void 0,MU(this))}catch(f){}};var LU=function(a){a.d$||(a.d$=_.AD(IU));return a.d$},MU=function(a){a.B8||(a.B8=_.AD(JU));return a.B8};
+(function(){var a=new KU;_.iC({0:"ytsubscribe",3:sO,5:function(c,f){"e"==c&&(c=f[5],c.register("_ready",a.Oga,LU(a)),c.register("msg-youtube-pubsub",(0,_.H)(a.Lha,a),LU(a)))}})})();
+});
+// Google Inc.

@@ -1,0 +1,108 @@
+PREFIX sod17: <http://www.spaghettiopendata.org/sod2017/resources#>
+PREFIX sod17onto: <http://www.spaghettiopendata.org/sod2017/ontology#>
+PREFIX org: <http://www.w3.org/ns/org#>
+PREFIX locn: <http://www.w3.org/ns/locn#>
+PREFIX gr:  <http://purl.org/goodrelations/v1#>
+PREFIX cpsv: <http://purl.org/vocab/cpsv#>
+PREFIX nacer_cls: <http://stamina-project.org/codes/nacer2/class/>
+PREFIX nacer_div: <http://stamina-project.org/codes/nacer2/division/>
+PREFIX nacer_grp: <http://stamina-project.org/codes/nacer2/group/>
+PREFIX schema: <http://schema.org/>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dbpedia: <http://dbpedia.org/resource/>
+PREFIX dbpo: <http://dbpedia.org/ontology/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+# TODO: mail, web URL to be added
+#
+
+CONSTRUCT
+{
+  ?hospitalUri
+    a ?hospitalClass, org:FormalOrganization;
+    rdfs:label ?OSPEDALE;
+    org:identifier ?COD_OSP_OD;
+    cpsv:provides ?naceUri;
+
+    locn:address ?hospitalAddressUri;
+    locn:location
+      ?hospitalComuneUri,
+      dbpedia:Trentino; # All data from this data set come from this province
+    locn:geometry ?hospitalGeometryUri;
+  .
+
+  # ISA Location breaks a location into these separate components.
+
+  ?hospitalAddressUri
+    a locn:Address;
+    locn:fullAddress ?addressString;
+    locn:postCode ?CAP;
+  .
+
+  ?hospitalComuneUri
+    a locn:Location, sod17onto:Comune;
+    locn:geographicName ?COMUNE
+  .
+
+  ?hospitalGeometryUri
+    a locn:Geometry;
+    geo:lat ?lat;
+    geo:long ?lng
+  .
+
+  # Constant
+  dbpedia:Trentino
+    rdfs:label "Provincia autonoma di Trento";
+    a dbpo:Province
+  .
+
+  sod17onto:Comune
+    rdfs:subClassOf dbpo:Municipality;
+    rdfs:seeAlso dbpedia:Comune
+  .
+}
+WHERE
+{
+  # The Hospital
+  #
+
+  BIND ( URI ( CONCAT ( tarql:expandPrefix ( "sod17" ), ?COD_OSP_OD ) ) AS ?hospitalUri )
+
+  # Let's choose the class so that we can distinguish between public and private organisations.
+  BIND (
+    IF (
+      xsd:int ( ?COD_TIPO_OSP ) = 5, gr:BusinessEntity,
+      IF (
+        xsd:int ( ?COD_TIPO_OSP ) = 1, schema:GovernmentOrganization,
+        org:FormalOrganization
+      )
+    )
+    AS ?hospitalClass
+  )
+
+  # Additionally, let's the NACE classification for the ospital type
+  BIND (
+    IF (
+      REGEX ( ?OSPEDALE, "OSPEDALE|PRESIDIO OSPEDALIERO", "i" ), nacer_cls:86.10, # Hospital Activities
+      IF (
+        REGEX ( ?OSPEDALE, "CASA DI CURA", "i" ), nacer_div:87, # Residential Care Activities
+        nacer_grp:86.9 # Other Human Health Activities
+      )
+    )
+    AS ?naceUri
+  )
+
+  # The Address
+  BIND ( CONCAT ( ?INDIRIZZO, ", ", ?COMUNE, ", Trento (", ?CAP, "), Italy" ) AS ?addressString )
+  BIND ( MD5 ( CONCAT ( ?addressString  ) ) AS ?addressHash )
+  BIND ( URI ( CONCAT ( tarql:expandPrefix ( "sod17" ), ?addressHash ) ) AS ?hospitalAddressUri )
+
+  BIND ( MD5 ( CONCAT ( ?COMUNE, "Trento, Italy" ) ) AS ?locnHash )
+  BIND ( URI ( CONCAT ( tarql:expandPrefix ( "sod17" ), ?locnHash ) ) AS ?hospitalComuneUri )
+  BIND ( URI ( CONCAT ( tarql:expandPrefix ( "sod17" ), ?addressHash, "_geo" ) ) AS ?hospitalGeometryUri )
+
+  # They come in as strings, numbers are more correct, aren't they?
+  BIND ( xsd:double ( ?LATITUDINE_P ) AS ?lat )
+  BIND ( xsd:double ( ?LONGITUDINE_P ) AS ?lng )
+}

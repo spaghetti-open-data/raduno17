@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://www.w3.org/ns/person#" uri="isa_person.rdf"/>
+    <uri id="Imports Wizard Entry" name="http://www.w3.org/ns/locn#" uri="isa_locn.rdf"/>
+    <uri id="Imports Wizard Entry" name="http://www.w3.org/ns/org#" uri="org_ontology.ttl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.org/vocab/cpsv" uri="isa_core_public_service_v1.0.rdf"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1495980078413" name="http://www.w3.org/ns/legal#" uri="isa_core_business_v1.0.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1495980078413" name="http://www.w3.org/ns/locn#" uri="isa_locn.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1495980078413" name="http://www.w3.org/ns/person#" uri="isa_person.rdf"/>
+    </group>
+</catalog>

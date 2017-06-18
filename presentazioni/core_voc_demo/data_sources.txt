@@ -1,0 +1,4 @@
+hospitals_tn.csv	http://www.dati.gov.it/dataset/strutture-ricovero-cura
+hospitals_tuscany.csv	http://www.dati.gov.it/dataset/regione-toscana-strutture-sanitarie
+nacer2.ttl	http://semstats.org/2016/challenge/challenge-data
+hospitals_lombardy.xml	http://www.dati.gov.it/dataset/elenco-rsd

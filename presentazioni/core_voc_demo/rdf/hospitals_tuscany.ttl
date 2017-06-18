@@ -1,0 +1,1142 @@
+@prefix sod17onto: <http://www.spaghettiopendata.org/sod2017/ontology#> .
+@prefix dbpo: <http://dbpedia.org/ontology/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sod17: <http://www.spaghettiopendata.org/sod2017/resources#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix gr: <http://purl.org/goodrelations/v1#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix cpsv: <http://purl.org/vocab/cpsv#> .
+
+
+sod17:10109060201 a org:FormalOrganization ;
+	rdfs:label "Presidio Ospedaliero Zona  Apuana" ;
+	org:identifier "10109060201" ;
+	locn:address sod17:d0fc3bca08975a3335846016f628df80 ;
+	locn:location sod17:f50cf95b3a3168dae1abb971c693e449 , sod17:977d6b2f9ccf731576b36a81baee95d8 ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:d0fc3bca08975a3335846016f628df80 a locn:Address ;
+	locn:fullAddress "PIAZZA SACCO E VANZETTI, Carrara, 54033 (MASSA E CARRARA), Italy" ;
+	locn:postCode "54033" .
+
+sod17:f50cf95b3a3168dae1abb971c693e449 a locn:Location , sod17onto:Comune ;
+	locn:geographicName "Carrara" .
+
+sod17:977d6b2f9ccf731576b36a81baee95d8 a locn:Location , dbpo:Province ;
+	locn:geographicName "MASSA E CARRARA" .
+
+sod17:10409024201 a org:FormalOrganization ;
+	rdfs:label "ALMA VITA SRL" ;
+	org:identifier "10409024201" ;
+	locn:address sod17:b94ddba9fcd3841e213ef5395d60c8b8 ;
+	locn:location sod17:c4f5a52e18787fe5bcb0b7e44903ba94 , sod17:b408c53fdfd4441c8119557dcfe158f1 ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:b94ddba9fcd3841e213ef5395d60c8b8 a locn:Address ;
+	locn:fullAddress "Via Eugenio Barsanti 24, Prato, 59100 (PRATO), Italy" ;
+	locn:postCode "59100" .
+
+sod17:c4f5a52e18787fe5bcb0b7e44903ba94 a locn:Location , sod17onto:Comune ;
+	locn:geographicName "Prato" .
+
+sod17:b408c53fdfd4441c8119557dcfe158f1 a locn:Location , dbpo:Province ;
+	locn:geographicName "PRATO" .
+
+sod17:10509090901 a org:FormalOrganization ;
+	rdfs:label "AUXILIUM VITAE VOLTERRA SPA" ;
+	org:identifier "10509090901" ;
+	locn:address sod17:2560a4209b83e4a8432ae2daf2027191 ;
+	locn:location sod17:50540f58cafce23cc605c9befadc6935 , sod17:07b1a313034c67e7644f3e1a6205d205 ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:2560a4209b83e4a8432ae2daf2027191 a locn:Address ;
+	locn:fullAddress "BORGO SAN LAZZARO, 5, Volterra, 56048 (PISA), Italy" ;
+	locn:postCode "56048" .
+
+sod17:50540f58cafce23cc605c9befadc6935 a locn:Location , sod17onto:Comune ;
+	locn:geographicName "Volterra" .
+
+sod17:07b1a313034c67e7644f3e1a6205d205 a locn:Location , dbpo:Province ;
+	locn:geographicName "PISA" .
+
+sod17:90409090401 a org:FormalOrganization ;
+	rdfs:label "AZIENDA OSPEDALIERA MEYER" ;
+	org:identifier "90409090401" ;
+	locn:address sod17:53911b3797e7432eaecd915b4734d427 ;
+	locn:location sod17:db5333cce3d707fa54f29fd084174072 , sod17:7559e094e9195b309e67b8754e395f1d ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:53911b3797e7432eaecd915b4734d427 a locn:Address ;
+	locn:fullAddress "VIALE PIERACCINI 24, Firenze, 50139 (FIRENZE), Italy" ;
+	locn:postCode "50139" .
+
+sod17:db5333cce3d707fa54f29fd084174072 a locn:Location , sod17onto:Comune ;
+	locn:geographicName "Firenze" .
+
+sod17:7559e094e9195b309e67b8754e395f1d a locn:Location , dbpo:Province ;
+	locn:geographicName "FIRENZE" .
+
+sod17:90209090201 a org:FormalOrganization ;
+	rdfs:label "AZIENDA OSPEDALIERA UNIVERSITARIA SENESE" ;
+	org:identifier "90209090201" ;
+	locn:address sod17:238a54237407cb31cffd13faa564b089 ;
+	locn:location sod17:934634023c7f7a663fdc994504f14b4a , sod17:8d4e31d0e3718b3d505aca0fdc54029a ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:238a54237407cb31cffd13faa564b089 a locn:Address ;
+	locn:fullAddress "V.LE BRACCI - LOC.LE SCOTTE, Siena, 53100 (SIENA), Italy" ;
+	locn:postCode "53100" .
+
+sod17:934634023c7f7a663fdc994504f14b4a a locn:Location , sod17onto:Comune ;
+	locn:geographicName "Siena" .
+
+sod17:8d4e31d0e3718b3d505aca0fdc54029a a locn:Location , dbpo:Province ;
+	locn:geographicName "SIENA" .
+
+sod17:90109090101 a org:FormalOrganization ;
+	rdfs:label "AZIENDA OSPEDALIERO-UNIVERSITARIA PISANA" ;
+	org:identifier "90109090101" ;
+	locn:address sod17:644b165f2de969399998cf3843fff3f6 ;
+	locn:location sod17:322db3095458956cc0d273d05531d993 , sod17:07b1a313034c67e7644f3e1a6205d205 ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:644b165f2de969399998cf3843fff3f6 a locn:Address ;
+	locn:fullAddress "via Roma 67, Pisa, 56126 (PISA), Italy" ;
+	locn:postCode "56126" .
+
+sod17:322db3095458956cc0d273d05531d993 a locn:Location , sod17onto:Comune ;
+	locn:geographicName "Pisa" .
+
+sod17:90309090301 a org:FormalOrganization ;
+	rdfs:label "AZ. OSPEDALIERO - UNIVERSITARIA CAREGGI" ;
+	org:identifier "90309090301" ;
+	locn:address sod17:c730cd0f8ec3b7c45c8629ad9c47a81a ;
+	locn:location sod17:db5333cce3d707fa54f29fd084174072 , sod17:7559e094e9195b309e67b8754e395f1d ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:c730cd0f8ec3b7c45c8629ad9c47a81a a locn:Address ;
+	locn:fullAddress "Largo Brambilla, 3, Firenze, 50134 (FIRENZE), Italy" ;
+	locn:postCode "50134" .
+
+sod17:11209020301 a org:FormalOrganization ;
+	rdfs:label "CASA DI CURA \"BARBANTINI\"" ;
+	org:identifier "11209020301" ;
+	locn:address sod17:2b87abbf718ef348d83adfa71e61d8c7 ;
+	locn:location sod17:ffd76a62497d0efbffc21e4b36238174 , sod17:026e98799e3bea361eb7e3aa2ff51b56 ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/division/87> .
+
+sod17:2b87abbf718ef348d83adfa71e61d8c7 a locn:Address ;
+	locn:fullAddress "VIA FOSSO GUIDARIO LOC. BICCHIO, Viareggio, 55049 (LUCCA), Italy" ;
+	locn:postCode "55049" .
+
+sod17:ffd76a62497d0efbffc21e4b36238174 a locn:Location , sod17onto:Comune ;
+	locn:geographicName "Viareggio" .
+
+sod17:026e98799e3bea361eb7e3aa2ff51b56 a locn:Location , dbpo:Province ;
+	locn:geographicName "LUCCA" .
+
+sod17:11009024001 a org:FormalOrganization ;
+	rdfs:label "CASA DI CURA FRATE SOLE  SRL" ;
+	org:identifier "11009024001" ;
+	locn:address sod17:6b46edd59a349daea2674c08a802baa3 ;
+	locn:location sod17:af81d1e8c6081a7203348bc0172cc527 , sod17:7559e094e9195b309e67b8754e395f1d ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/division/87> .
+
+sod17:6b46edd59a349daea2674c08a802baa3 a locn:Address ;
+	locn:fullAddress "VIA SAN ROMOLO, Figline e Incisa Valdarno, 50063 (FIRENZE), Italy" ;
+	locn:postCode "50063" .
+
+sod17:af81d1e8c6081a7203348bc0172cc527 a locn:Location , sod17onto:Comune ;
+	locn:geographicName "Figline e Incisa Valdarno" .
+
+sod17:11109023501 a org:FormalOrganization ;
+	rdfs:label "CASA DI CURA \"LEONARDO\"" ;
+	org:identifier "11109023501" ;
+	locn:address sod17:4b9fe980c78f50f58ab65b554443ca7e ;
+	locn:location sod17:f7b131f06542a3d3d3c671961e50b623 , sod17:7559e094e9195b309e67b8754e395f1d ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/division/87> .
+
+sod17:4b9fe980c78f50f58ab65b554443ca7e a locn:Address ;
+	locn:fullAddress "VIA PIETRO GROCCO 100 - SOVIGLIANA, Vinci, 50059 (FIRENZE), Italy" ;
+	locn:postCode "50059" .
+
+sod17:f7b131f06542a3d3d3c671961e50b623 a locn:Location , sod17onto:Comune ;
+	locn:geographicName "Vinci" .
+
+sod17:10809023601 a org:FormalOrganization ;
+	rdfs:label "CASA DI CURA POGGIO DEL SOLE" ;
+	org:identifier "10809023601" ;
+	locn:address sod17:67bf604a6687d42f4cce3ea3bb41a27e ;
+	locn:location sod17:34823294dd5026c94d2919946d88655e , sod17:a33a2f2bad25d92ecf820a289c72bb8c ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/division/87> .
+
+sod17:67bf604a6687d42f4cce3ea3bb41a27e a locn:Address ;
+	locn:fullAddress "VIA FRA GUITTONE 2, Arezzo, 52100 (AREZZO), Italy" ;
+	locn:postCode "52100" .
+
+sod17:34823294dd5026c94d2919946d88655e a locn:Location , sod17onto:Comune ;
+	locn:geographicName "Arezzo" .
+
+sod17:a33a2f2bad25d92ecf820a289c72bb8c a locn:Location , dbpo:Province ;
+	locn:geographicName "AREZZO" .
+
+sod17:11009022801 a org:FormalOrganization ;
+	rdfs:label "CASA DI CURA POGGIO SERENO  srl" ;
+	org:identifier "11009022801" ;
+	locn:address sod17:44a9e81939e4308bb151bb270f29282a ;
+	locn:location sod17:0b6e99edce73490bcb154350c2520ef0 , sod17:7559e094e9195b309e67b8754e395f1d ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/division/87> .
+
+sod17:44a9e81939e4308bb151bb270f29282a a locn:Address ;
+	locn:fullAddress "VIA BENEDETTO DA MAIANO 14, Fiesole, 50014 (FIRENZE), Italy" ;
+	locn:postCode "50014" .
+
+sod17:0b6e99edce73490bcb154350c2520ef0 a locn:Location , sod17onto:Comune ;
+	locn:geographicName "Fiesole" .
+
+sod17:10509023201 a org:FormalOrganization ;
+	rdfs:label "CASA DI CURA PRIVATA DELLA MISERICORDIA" ;
+	org:identifier "10509023201" ;
+	locn:address sod17:813969fc94e75435eb0865842fa329cf ;
+	locn:location sod17:ddbd693809c7eb4c567426d794409883 , sod17:07b1a313034c67e7644f3e1a6205d205 ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/division/87> ;
+	a gr:BusinessEntity .
+
+sod17:813969fc94e75435eb0865842fa329cf a locn:Address ;
+	locn:fullAddress "VIA CARLO CAMMEO , 24, Cascina, 56023 (PISA), Italy" ;
+	locn:postCode "56023" .
+
+sod17:ddbd693809c7eb4c567426d794409883 a locn:Location , sod17onto:Comune ;
+	locn:geographicName "Cascina" .
+
+sod17:10509023301 a org:FormalOrganization ;
+	rdfs:label "CASA DI CURA PRIVATA SAN ROSSORE S.R.L." ;
+	org:identifier "10509023301" ;
+	locn:address sod17:33a9b1c2cdf72a300be31da05c9b6297 ;
+	locn:location sod17:322db3095458956cc0d273d05531d993 , sod17:07b1a313034c67e7644f3e1a6205d205 ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/division/87> ;
+	a gr:BusinessEntity .
+
+sod17:33a9b1c2cdf72a300be31da05c9b6297 a locn:Address ;
+	locn:fullAddress "VIALE DELLE CASCINE,152/F, Pisa, 56122 (PISA), Italy" ;
+	locn:postCode "56122" .
+
+sod17:10709023901 a org:FormalOrganization ;
+	rdfs:label "CASA DI CURA RUGANI" ;
+	org:identifier "10709023901" ;
+	locn:address sod17:fce7cbdf3c135db78fdb451a8adf1f33 ;
+	locn:location sod17:c01964b5852552ebf8a2ae255b261859 , sod17:8d4e31d0e3718b3d505aca0fdc54029a ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/division/87> .
+
+sod17:fce7cbdf3c135db78fdb451a8adf1f33 a locn:Address ;
+	locn:fullAddress "PIAZZA MATTEOTTI 33, Monteriggioni, 53100 (SIENA), Italy" ;
+	locn:postCode "53100" .
+
+sod17:c01964b5852552ebf8a2ae255b261859 a locn:Location , sod17onto:Comune ;
+	locn:geographicName "Monteriggioni" .
+
+sod17:10809023701 a org:FormalOrganization ;
+	rdfs:label "CASA DI CURA S.GIUSEPPE" ;
+	org:identifier "10809023701" ;
+	locn:address sod17:23ce348826adf9abcb1df9a7c7dd852a ;
+	locn:location sod17:34823294dd5026c94d2919946d88655e , sod17:a33a2f2bad25d92ecf820a289c72bb8c ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/division/87> .
+
+sod17:23ce348826adf9abcb1df9a7c7dd852a a locn:Address ;
+	locn:fullAddress "VIA A. SAFFI 33, Arezzo, 52100 (AREZZO), Italy" ;
+	locn:postCode "52100" .
+
+sod17:10309020701 a org:FormalOrganization ;
+	rdfs:label "CASA DI CURA S. RITA" ;
+	org:identifier "10309020701" ;
+	locn:address sod17:411061e06673f5cfed02ccdefa2422f4 ;
+	locn:location sod17:36022bef594703129a9782f83d1efee1 , sod17:c797b6f2c9a42df746ce078a9771c164 ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/division/87> .
+
+sod17:411061e06673f5cfed02ccdefa2422f4 a locn:Address ;
+	locn:fullAddress "V. MANIN N. 29, Montecatini-Terme, 51016 (PISTOIA), Italy" ;
+	locn:postCode "51016" .
+
+sod17:36022bef594703129a9782f83d1efee1 a locn:Location , sod17onto:Comune ;
+	locn:geographicName "Montecatini-Terme" .
+
+sod17:c797b6f2c9a42df746ce078a9771c164 a locn:Location , dbpo:Province ;
+	locn:geographicName "PISTOIA" .
+
+sod17:11209020201 a org:FormalOrganization ;
+	rdfs:label "CASA CURA S.CAMILLO-FON. OPERA S.CAMILLO" ;
+	org:identifier "11209020201" ;
+	locn:address sod17:dafcb9cfe4c6c4ebce0ce11f793ff75a ;
+	locn:location sod17:3dfc02600af4645d45083e3e2f8042ab , sod17:026e98799e3bea361eb7e3aa2ff51b56 ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:dafcb9cfe4c6c4ebce0ce11f793ff75a a locn:Address ;
+	locn:fullAddress "VIA P.IGNAZIO da CARRARA 37, Forte dei Marmi, 55042 (LUCCA), Italy" ;
+	locn:postCode "55042" .
+
+sod17:3dfc02600af4645d45083e3e2f8042ab a locn:Location , sod17onto:Comune ;
+	locn:geographicName "Forte dei Marmi" .
+
+sod17:10509023101 a org:FormalOrganization ;
+	rdfs:label "CASA DI CURA SUORE DELL'ADDOLORATA" ;
+	org:identifier "10509023101" ;
+	locn:address sod17:fb731e500605d95995ac9df5551d9200 ;
+	locn:location sod17:322db3095458956cc0d273d05531d993 , sod17:07b1a313034c67e7644f3e1a6205d205 ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/division/87> .
+
+sod17:fb731e500605d95995ac9df5551d9200 a locn:Address ;
+	locn:fullAddress "VIA MANZONI, 13, Pisa, 56125 (PISA), Italy" ;
+	locn:postCode "56125" .
+
+sod17:10209020501 a org:FormalOrganization ;
+	rdfs:label "CASA DI CURA S.ZITA" ;
+	org:identifier "10209020501" ;
+	locn:address sod17:c63d74359681486c28a832d9c2073a82 ;
+	locn:location sod17:3dd500594e052d4876d8bdb5785cdfc9 , sod17:026e98799e3bea361eb7e3aa2ff51b56 ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/division/87> .
+
+sod17:c63d74359681486c28a832d9c2073a82 a locn:Address ;
+	locn:fullAddress "VIA DEL PANIFICIO, 13, Lucca, 55100 (LUCCA), Italy" ;
+	locn:postCode "55100" .
+
+sod17:3dd500594e052d4876d8bdb5785cdfc9 a locn:Location , sod17onto:Comune ;
+	locn:geographicName "Lucca" .
+
+sod17:11009021801 a org:FormalOrganization ;
+	rdfs:label "IFCA SPA Casa di Cura Ulivella e Glicini" ;
+	org:identifier "11009021801" ;
+	locn:address sod17:96a7b070e11e1b3cdb8bb56cef3c91b4 ;
+	locn:location sod17:db5333cce3d707fa54f29fd084174072 , sod17:7559e094e9195b309e67b8754e395f1d ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/division/87> .
+
+sod17:96a7b070e11e1b3cdb8bb56cef3c91b4 a locn:Address ;
+	locn:fullAddress "VIA DEL PERGOLINO, Firenze, 50139 (FIRENZE), Italy" ;
+	locn:postCode "50139" .
+
+sod17:11009023001 a org:FormalOrganization ;
+	rdfs:label "CASA DI CURA VAL DI SIEVE srl" ;
+	org:identifier "11009023001" ;
+	locn:address sod17:6c6792f4a0e6fc668e322624b40dfd7e ;
+	locn:location sod17:ef9c493bf933f67f8cd3869040d72bce , sod17:7559e094e9195b309e67b8754e395f1d ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/division/87> .
+
+sod17:6c6792f4a0e6fc668e322624b40dfd7e a locn:Address ;
+	locn:fullAddress "VIA FORLIVESE 122, Pelago, 50060 (FIRENZE), Italy" ;
+	locn:postCode "50060" .
+
+sod17:ef9c493bf933f67f8cd3869040d72bce a locn:Location , sod17onto:Comune ;
+	locn:geographicName "Pelago" .
+
+sod17:11009021401 a org:FormalOrganization ;
+	rdfs:label "CASA DI CURA VILLA CHERUBINI PROSPERIUS" ;
+	org:identifier "11009021401" ;
+	locn:address sod17:3c9fc8788a7eaf883166210ac83d6e0a ;
+	locn:location sod17:db5333cce3d707fa54f29fd084174072 , sod17:7559e094e9195b309e67b8754e395f1d ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/division/87> .
+
+sod17:3c9fc8788a7eaf883166210ac83d6e0a a locn:Address ;
+	locn:fullAddress "VIA CHERUBINI 8, Firenze, 50121 (FIRENZE), Italy" ;
+	locn:postCode "50121" .
+
+sod17:11009022501 a org:FormalOrganization ;
+	rdfs:label "VILLA DELLE TERME SPA" ;
+	org:identifier "11009022501" ;
+	locn:address sod17:295107c57388c679581f9d752d10163b ;
+	locn:location sod17:db5333cce3d707fa54f29fd084174072 , sod17:7559e094e9195b309e67b8754e395f1d ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:295107c57388c679581f9d752d10163b a locn:Address ;
+	locn:fullAddress "VIALE MAZZINI 43, Firenze, 50132 (FIRENZE), Italy" ;
+	locn:postCode "50132" .
+
+sod17:11009021301 a org:FormalOrganization ;
+	rdfs:label "CASA DI CURA VILLA DONATELLO SPA" ;
+	org:identifier "11009021301" ;
+	locn:address sod17:bb3ff0e7b9757d6223449221e7425a35 ;
+	locn:location sod17:db5333cce3d707fa54f29fd084174072 , sod17:7559e094e9195b309e67b8754e395f1d ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/division/87> .
+
+sod17:bb3ff0e7b9757d6223449221e7425a35 a locn:Address ;
+	locn:fullAddress "PIAZZALE DONATELLO 14, Firenze, 50132 (FIRENZE), Italy" ;
+	locn:postCode "50132" .
+
+sod17:10409021001 a org:FormalOrganization ;
+	rdfs:label "CASA DI CURA VILLA FIORITA" ;
+	org:identifier "10409021001" ;
+	locn:address sod17:1f94b4c2f24aea9de55cbeb1365cc057 ;
+	locn:location sod17:c4f5a52e18787fe5bcb0b7e44903ba94 , sod17:b408c53fdfd4441c8119557dcfe158f1 ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/division/87> .
+
+sod17:1f94b4c2f24aea9de55cbeb1365cc057 a locn:Address ;
+	locn:fullAddress "VIA DI CANTAGALLO 56, Prato, 59100 (PRATO), Italy" ;
+	locn:postCode "59100" .
+
+sod17:11009021901 a org:FormalOrganization ;
+	rdfs:label "VILLA MARIA TERESA HOSPITAL SRL" ;
+	org:identifier "11009021901" ;
+	locn:address sod17:0c7b96d7240307eb66a6c4245ce294e7 ;
+	locn:location sod17:db5333cce3d707fa54f29fd084174072 , sod17:7559e094e9195b309e67b8754e395f1d ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:0c7b96d7240307eb66a6c4245ce294e7 a locn:Address ;
+	locn:fullAddress "VIA DELLA CERNAIA 18, Firenze, 50129 (FIRENZE), Italy" ;
+	locn:postCode "50129" .
+
+sod17:10609023401 a org:FormalOrganization ;
+	rdfs:label "CASA DI CURA VILLA TIRRENA" ;
+	org:identifier "10609023401" ;
+	locn:address sod17:e4582d51304ada451a58b28e47cdab7d ;
+	locn:location sod17:5efb98cc2a44abbe2973aecc6cc85a58 , sod17:591423ff1352e2f3f21eedf691d927c1 ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/division/87> .
+
+sod17:e4582d51304ada451a58b28e47cdab7d a locn:Address ;
+	locn:fullAddress "VIA MONTEBELLO, 102, Livorno, 57100 (LIVORNO), Italy" ;
+	locn:postCode "57100" .
+
+sod17:5efb98cc2a44abbe2973aecc6cc85a58 a locn:Location , sod17onto:Comune ;
+	locn:geographicName "Livorno" .
+
+sod17:591423ff1352e2f3f21eedf691d927c1 a locn:Location , dbpo:Province ;
+	locn:geographicName "LIVORNO" .
+
+sod17:10209020601 a org:FormalOrganization ;
+	rdfs:label "C.CURA VILLE DI NOZZANO S.STEFANO RIAB." ;
+	org:identifier "10209020601" ;
+	locn:address sod17:f6b8ed538b56572225c5a926b8804c96 ;
+	locn:location sod17:3dd500594e052d4876d8bdb5785cdfc9 , sod17:026e98799e3bea361eb7e3aa2ff51b56 ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:f6b8ed538b56572225c5a926b8804c96 a locn:Address ;
+	locn:fullAddress "VIA BORDOGNA, 144-NOZZANO, Lucca, 55050 (LUCCA), Italy" ;
+	locn:postCode "55050" .
+
+sod17:10209020401 a org:FormalOrganization ;
+	rdfs:label "C. DI CURA M.D. BARBANTINI SANTA CHIARA" ;
+	org:identifier "10209020401" ;
+	locn:address sod17:0c8df08308ce4ed1b514294cc007355f ;
+	locn:location sod17:3dd500594e052d4876d8bdb5785cdfc9 , sod17:026e98799e3bea361eb7e3aa2ff51b56 ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:0c8df08308ce4ed1b514294cc007355f a locn:Address ;
+	locn:fullAddress "VIA DEL CALCIO, 2, Lucca, 55100 (LUCCA), Italy" ;
+	locn:postCode "55100" .
+
+sod17:10109024101 a org:FormalOrganization ;
+	rdfs:label "Cen.S. Maria alla Pineta  F. don Gnocchi" ;
+	org:identifier "10109024101" ;
+	locn:address sod17:26763e7a9a7cc662d3992d34414bcbe8 ;
+	locn:location sod17:b06518377c1a6c200449adbafefb4d2b , sod17:977d6b2f9ccf731576b36a81baee95d8 ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:26763e7a9a7cc662d3992d34414bcbe8 a locn:Address ;
+	locn:fullAddress "Via istriana N�24, Massa, 54100 (MASSA E CARRARA), Italy" ;
+	locn:postCode "54100" .
+
+sod17:b06518377c1a6c200449adbafefb4d2b a locn:Location , sod17onto:Comune ;
+	locn:geographicName "Massa" .
+
+sod17:10809023602 a org:FormalOrganization ;
+	rdfs:label "CASA DI CURA POGGIO DEL SOLE" ;
+	org:identifier "10809023602" ;
+	locn:address sod17:bfc5d35f1b0c2b754b13a091f485d4b6 ;
+	locn:location sod17:34823294dd5026c94d2919946d88655e , sod17:a33a2f2bad25d92ecf820a289c72bb8c ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/division/87> .
+
+sod17:bfc5d35f1b0c2b754b13a091f485d4b6 a locn:Address ;
+	locn:fullAddress "VIA DEI LECCI 22, Arezzo, 52100 (AREZZO), Italy" ;
+	locn:postCode "52100" .
+
+sod17:11009024301 a org:FormalOrganization ;
+	rdfs:label "Centro Day Surgery Maurizio Bufalini srl" ;
+	org:identifier "11009024301" ;
+	locn:address sod17:c89ada3b5c6fc8a4880ac573bc05be27 ;
+	locn:location sod17:db5333cce3d707fa54f29fd084174072 , sod17:7559e094e9195b309e67b8754e395f1d ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:c89ada3b5c6fc8a4880ac573bc05be27 a locn:Address ;
+	locn:fullAddress "Via Gino Capponi 26, Firenze, 50121 (FIRENZE), Italy" ;
+	locn:postCode "50121" .
+
+sod17:11009022001 a org:FormalOrganization ;
+	rdfs:label "C.  Onc.co F.no Casa di C. Villanova SRL" ;
+	org:identifier "11009022001" ;
+	locn:address sod17:2984d597daae5abfc71d9307440e471b ;
+	locn:location sod17:111386663a8c229cf3aa60004e0db836 , sod17:7559e094e9195b309e67b8754e395f1d ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:2984d597daae5abfc71d9307440e471b a locn:Address ;
+	locn:fullAddress "VIA ATTILIO RAGIONIERI 101, Sesto Fiorentino, 50019 (FIRENZE), Italy" ;
+	locn:postCode "50019" .
+
+sod17:111386663a8c229cf3aa60004e0db836 a locn:Location , sod17onto:Comune ;
+	locn:geographicName "Sesto Fiorentino" .
+
+sod17:10809091101 a org:FormalOrganization ;
+	rdfs:label "CENTRO RIABILITAZIONE TERRANUOVA B. SPA" ;
+	org:identifier "10809091101" ;
+	locn:address sod17:90fc59bd25b4524186375298d7d341b5 ;
+	locn:location sod17:d9dda09e54421dad442de4041eedcae6 , sod17:a33a2f2bad25d92ecf820a289c72bb8c ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:90fc59bd25b4524186375298d7d341b5 a locn:Address ;
+	locn:fullAddress "P.ZZA VOLONTAZIATO, Montevarchi, 52025 (AREZZO), Italy" ;
+	locn:postCode "52025" .
+
+sod17:d9dda09e54421dad442de4041eedcae6 a locn:Location , sod17onto:Comune ;
+	locn:geographicName "Montevarchi" .
+
+sod17:90709090701 a org:FormalOrganization ;
+	rdfs:label "Fondazione CNR-RT G. Monasterio" ;
+	org:identifier "90709090701" ;
+	locn:address sod17:ef7ec902d6f4344aeb6809bdab6359c4 ;
+	locn:location sod17:322db3095458956cc0d273d05531d993 , sod17:07b1a313034c67e7644f3e1a6205d205 ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:ef7ec902d6f4344aeb6809bdab6359c4 a locn:Address ;
+	locn:fullAddress "Via Moruzzi 1, Pisa, 56124 (PISA), Italy" ;
+	locn:postCode "56124" .
+
+sod17:11009091001 a org:FormalOrganization ;
+	rdfs:label "FONDAZIONE DON CARLO GNOCCHI - ONLUS" ;
+	org:identifier "11009091001" ;
+	locn:address sod17:0846ed5a03bce629708a261e721d0816 ;
+	locn:location sod17:db5333cce3d707fa54f29fd084174072 , sod17:7559e094e9195b309e67b8754e395f1d ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:0846ed5a03bce629708a261e721d0816 a locn:Address ;
+	locn:fullAddress "VIA DI SCANDICCI, Firenze, 50143 (FIRENZE), Italy" ;
+	locn:postCode "50143" .
+
+sod17:90109090601 a org:FormalOrganization ;
+	rdfs:label "FONDAZIONE STELLA MARIS - CALAMBRONE" ;
+	org:identifier "90109090601" ;
+	locn:address sod17:f61dc561e401f5ba7fe2fadcb71b22a8 ;
+	locn:location sod17:322db3095458956cc0d273d05531d993 , sod17:07b1a313034c67e7644f3e1a6205d205 ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:f61dc561e401f5ba7fe2fadcb71b22a8 a locn:Address ;
+	locn:fullAddress "VIALE DEL TIRRENO 331 - CALAMBRONE, Pisa, 56018 (PISA), Italy" ;
+	locn:postCode "56018" .
+
+sod17:11009063202 a org:FormalOrganization ;
+	rdfs:label "OSPEDALE FIORENTINO" ;
+	org:identifier "11009063202" ;
+	locn:address sod17:85544bf36cad40f9b0325b23addb4723 ;
+	locn:location sod17:db5333cce3d707fa54f29fd084174072 , sod17:7559e094e9195b309e67b8754e395f1d ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:85544bf36cad40f9b0325b23addb4723 a locn:Address ;
+	locn:fullAddress "VIALE MICHELANGELO, 41, Firenze, 50125 (FIRENZE), Italy" ;
+	locn:postCode "50125" .
+
+sod17:11009022401 a org:FormalOrganization ;
+	rdfs:label "ISTITUTO  REUMATOLOGICO  MUNARI  S.R.L" ;
+	org:identifier "11009022401" ;
+	locn:address sod17:1d85423b932d0a0d7daf06602c555752 ;
+	locn:location sod17:db5333cce3d707fa54f29fd084174072 , sod17:7559e094e9195b309e67b8754e395f1d ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:1d85423b932d0a0d7daf06602c555752 a locn:Address ;
+	locn:fullAddress "VIALE GIUSEPPE MAZZINI 38, Firenze, 50132 (FIRENZE), Italy" ;
+	locn:postCode "50132" .
+
+sod17:11009024401 a org:FormalOrganization ;
+	rdfs:label "Life Cronos SRL - Villa delle Rose" ;
+	org:identifier "11009024401" ;
+	locn:address sod17:d4d013e86d39c14affae18ec947c4acb ;
+	locn:location sod17:db5333cce3d707fa54f29fd084174072 , sod17:7559e094e9195b309e67b8754e395f1d ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:d4d013e86d39c14affae18ec947c4acb a locn:Address ;
+	locn:fullAddress "Cosimo il Vecchio 8/10, Firenze, 50139 (FIRENZE), Italy" ;
+	locn:postCode "50139" .
+
+sod17:10409060801 a org:FormalOrganization ;
+	rdfs:label "NUOVO OSPEDALE DI PRATO S.Stefano" ;
+	org:identifier "10409060801" ;
+	locn:address sod17:8ae719c7ee65d4661b8cf5cfda54df6e ;
+	locn:location sod17:c4f5a52e18787fe5bcb0b7e44903ba94 , sod17:b408c53fdfd4441c8119557dcfe158f1 ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:8ae719c7ee65d4661b8cf5cfda54df6e a locn:Address ;
+	locn:fullAddress "Via Suor Niccolina Infermiera 20/22, Prato, 59100 (PRATO), Italy" ;
+	locn:postCode "59100" .
+
+sod17:10809064301 a org:FormalOrganization ;
+	rdfs:label "NUOVO OSPEDALE VALDICHIANA S. MARGHERITA" ;
+	org:identifier "10809064301" ;
+	locn:address sod17:774add54e9036b2e8780fbfe1dd76677 ;
+	locn:location sod17:5585cc608d3952540d48baa4ec5b1e08 , sod17:a33a2f2bad25d92ecf820a289c72bb8c ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:774add54e9036b2e8780fbfe1dd76677 a locn:Address ;
+	locn:fullAddress "LOC. FRATTA, Cortona, 52044 (AREZZO), Italy" ;
+	locn:postCode "52044" .
+
+sod17:5585cc608d3952540d48baa4ec5b1e08 a locn:Location , sod17onto:Comune ;
+	locn:geographicName "Cortona" .
+
+sod17:11009063206 a org:FormalOrganization ;
+	rdfs:label "OSPEDALE FIORENTINO" ;
+	org:identifier "11009063206" ;
+	locn:address sod17:d9aa6b23f7d245908185ac2833c5bb6d ;
+	locn:location sod17:db5333cce3d707fa54f29fd084174072 , sod17:7559e094e9195b309e67b8754e395f1d ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:d9aa6b23f7d245908185ac2833c5bb6d a locn:Address ;
+	locn:fullAddress "VIA DELLE OBLATE,4, Firenze, 50141 (FIRENZE), Italy" ;
+	locn:postCode "50141" .
+
+sod17:10109060102 a org:FormalOrganization ;
+	rdfs:label "Presidio Ospedaliero  Zona Lunigiana" ;
+	org:identifier "10109060102" ;
+	locn:address sod17:6f8a8b71947e6259e5fecea3edb67bce ;
+	locn:location sod17:ce310deff11927aca36dcd33726d93ec , sod17:977d6b2f9ccf731576b36a81baee95d8 ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:6f8a8b71947e6259e5fecea3edb67bce a locn:Address ;
+	locn:fullAddress "VIA NAZIONALE, Fivizzano, 54027 (MASSA E CARRARA), Italy" ;
+	locn:postCode "54027" .
+
+sod17:ce310deff11927aca36dcd33726d93ec a locn:Location , sod17onto:Comune ;
+	locn:geographicName "Fivizzano" .
+
+sod17:10809062101 a org:FormalOrganization ;
+	rdfs:label "OSPEDALE AREA ARETINA NORD" ;
+	org:identifier "10809062101" ;
+	locn:address sod17:3ff65cce80ea447faf7e3973d90054d8 ;
+	locn:location sod17:34823294dd5026c94d2919946d88655e , sod17:a33a2f2bad25d92ecf820a289c72bb8c ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:3ff65cce80ea447faf7e3973d90054d8 a locn:Address ;
+	locn:fullAddress "VIA P. NENNI, Arezzo, 52100 (AREZZO), Italy" ;
+	locn:postCode "52100" .
+
+sod17:10609061201 a org:FormalOrganization ;
+	rdfs:label "OSPEDALE CECINA" ;
+	org:identifier "10609061201" ;
+	locn:address sod17:e943036afbb7c85f45d7d439ac853076 ;
+	locn:location sod17:fdbcc721566226428be81c086e250ba3 , sod17:591423ff1352e2f3f21eedf691d927c1 ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:e943036afbb7c85f45d7d439ac853076 a locn:Address ;
+	locn:fullAddress "VIA DELLA LADRONAIA, Cecina, 57023 (LIVORNO), Italy" ;
+	locn:postCode "57023" .
+
+sod17:fdbcc721566226428be81c086e250ba3 a locn:Location , sod17onto:Comune ;
+	locn:geographicName "Cecina" .
+
+sod17:10909062501 a org:FormalOrganization ;
+	rdfs:label "OSPEDALE CIVILE DI CASTEL DEL PIANO" ;
+	org:identifier "10909062501" ;
+	locn:address sod17:c2c1e21034ef20286989b4551211e948 ;
+	locn:location sod17:0b5e8331116dda85636b1476a0f2a85c , sod17:8d6a118e516920d5ee29031be95bb9c8 ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:c2c1e21034ef20286989b4551211e948 a locn:Address ;
+	locn:fullAddress "VIA DANTE ALIGHIERI, Castel del Piano, 58033 (GROSSETO), Italy" ;
+	locn:postCode "58033" .
+
+sod17:0b5e8331116dda85636b1476a0f2a85c a locn:Location , sod17onto:Comune ;
+	locn:geographicName "Castel del Piano" .
+
+sod17:8d6a118e516920d5ee29031be95bb9c8 a locn:Location , dbpo:Province ;
+	locn:geographicName "GROSSETO" .
+
+sod17:11109064204 a org:FormalOrganization ;
+	rdfs:label "Presidio Ospedaliero Asl 11 Empoli" ;
+	org:identifier "11109064204" ;
+	locn:address sod17:da87ffad995009bce10ef4c15cdca203 ;
+	locn:location sod17:0344ab6bc91d676637daf6609a0aa810 , sod17:7559e094e9195b309e67b8754e395f1d ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:da87ffad995009bce10ef4c15cdca203 a locn:Address ;
+	locn:fullAddress "Piazza XX Settembre, Empoli, 56028 (FIRENZE), Italy" ;
+	locn:postCode "56028" .
+
+sod17:0344ab6bc91d676637daf6609a0aa810 a locn:Location , sod17onto:Comune ;
+	locn:geographicName "Empoli" .
+
+sod17:10809061801 a org:FormalOrganization ;
+	rdfs:label "OSPEDALE DEL CASENTINO" ;
+	org:identifier "10809061801" ;
+	locn:address sod17:4bf01c9139cdefd2a74ca1b987e760f0 ;
+	locn:location sod17:f9f61f59c9dd3e99d0070b018f15601c , sod17:a33a2f2bad25d92ecf820a289c72bb8c ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:4bf01c9139cdefd2a74ca1b987e760f0 a locn:Address ;
+	locn:fullAddress "VIALE FILIPPO TURATI, Bibbiena, 52011 (AREZZO), Italy" ;
+	locn:postCode "52011" .
+
+sod17:f9f61f59c9dd3e99d0070b018f15601c a locn:Location , sod17onto:Comune ;
+	locn:geographicName "Bibbiena" .
+
+sod17:90709090702 a org:FormalOrganization ;
+	rdfs:label "Fondazione CNR-RT G. Monasterio" ;
+	org:identifier "90709090702" ;
+	locn:address sod17:d3a14161ea73d9c57eea65c0f9dfab2e ;
+	locn:location sod17:322db3095458956cc0d273d05531d993 , sod17:07b1a313034c67e7644f3e1a6205d205 ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:d3a14161ea73d9c57eea65c0f9dfab2e a locn:Address ;
+	locn:fullAddress "Via Aurelia Sud - Montepepe, Pisa, 54100 (PISA), Italy" ;
+	locn:postCode "54100" .
+
+sod17:10709063801 a org:FormalOrganization ;
+	rdfs:label "OSPEDALE DELL'ALTA VAL D'ELSA" ;
+	org:identifier "10709063801" ;
+	locn:address sod17:385329e79abf613a8f5632de748f5a37 ;
+	locn:location sod17:0c206d355d83414336ff08061acd3712 , sod17:8d4e31d0e3718b3d505aca0fdc54029a ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:385329e79abf613a8f5632de748f5a37 a locn:Address ;
+	locn:fullAddress "LOC. CAMPOSTAGGIA, Poggibonsi, 53036 (SIENA), Italy" ;
+	locn:postCode "53036" .
+
+sod17:0c206d355d83414336ff08061acd3712 a locn:Location , sod17onto:Comune ;
+	locn:geographicName "Poggibonsi" .
+
+sod17:10909062601 a org:FormalOrganization ;
+	rdfs:label "OSPEDALE DELLA MISERICORDIA GROSSETO" ;
+	org:identifier "10909062601" ;
+	locn:address sod17:859794c085a7ad9ee032ffb90b9e271b ;
+	locn:location sod17:7a98c75d88b8f7486c288e24511c2688 , sod17:8d6a118e516920d5ee29031be95bb9c8 ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:859794c085a7ad9ee032ffb90b9e271b a locn:Address ;
+	locn:fullAddress "VIA SENESE, 169 - GROSSETO, Grosseto, 58100 (GROSSETO), Italy" ;
+	locn:postCode "58100" .
+
+sod17:7a98c75d88b8f7486c288e24511c2688 a locn:Location , sod17onto:Comune ;
+	locn:geographicName "Grosseto" .
+
+sod17:10309060701 a org:FormalOrganization ;
+	rdfs:label "OSPEDALE DELLA VALDINIEVOLE" ;
+	org:identifier "10309060701" ;
+	locn:address sod17:b5ee5ba3938ac6d483e88fa53147ed2f ;
+	locn:location sod17:fa8b35ed66a11900a0cfdcf2ba53fd8b , sod17:c797b6f2c9a42df746ce078a9771c164 ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:b5ee5ba3938ac6d483e88fa53147ed2f a locn:Address ;
+	locn:fullAddress "V. CESARE BATTISTI, Pescia, 51017 (PISTOIA), Italy" ;
+	locn:postCode "51017" .
+
+sod17:fa8b35ed66a11900a0cfdcf2ba53fd8b a locn:Location , sod17onto:Comune ;
+	locn:geographicName "Pescia" .
+
+sod17:10809061901 a org:FormalOrganization ;
+	rdfs:label "OSPEDALE DELLA VALTIBERINA" ;
+	org:identifier "10809061901" ;
+	locn:address sod17:bdc5054e2ec0c6b9133151c89c4fe125 ;
+	locn:location sod17:cbaca9fa4932b23f9bfd2b84f98f0665 , sod17:a33a2f2bad25d92ecf820a289c72bb8c ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:bdc5054e2ec0c6b9133151c89c4fe125 a locn:Address ;
+	locn:fullAddress "VIA SANTI DI TITO 24, Sansepolcro, 52037 (AREZZO), Italy" ;
+	locn:postCode "52037" .
+
+sod17:cbaca9fa4932b23f9bfd2b84f98f0665 a locn:Location , sod17onto:Comune ;
+	locn:geographicName "Sansepolcro" .
+
+sod17:11009062701 a org:FormalOrganization ;
+	rdfs:label "OSPEDALE DI BORGO SAN LORENZO" ;
+	org:identifier "11009062701" ;
+	locn:address sod17:cde29d55917a423fcc87a6f20d235e9e ;
+	locn:location sod17:1d08fed0f6a0d04da66e8156e1f0eaa8 , sod17:7559e094e9195b309e67b8754e395f1d ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:cde29d55917a423fcc87a6f20d235e9e a locn:Address ;
+	locn:fullAddress "VIALE DELLA RESISTENZA, Borgo San Lorenzo, 50032 (FIRENZE), Italy" ;
+	locn:postCode "50032" .
+
+sod17:1d08fed0f6a0d04da66e8156e1f0eaa8 a locn:Location , sod17onto:Comune ;
+	locn:geographicName "Borgo San Lorenzo" .
+
+sod17:10909062402 a org:FormalOrganization ;
+	rdfs:label "OSPEDALE DELLE COLLINE DELL'ALBEGNA" ;
+	org:identifier "10909062402" ;
+	locn:address sod17:1587d010c7e301e7ea779fae9a9ba5e5 ;
+	locn:location sod17:8fdb728a7a9050679f22b28358a85675 , sod17:8d6a118e516920d5ee29031be95bb9c8 ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:1587d010c7e301e7ea779fae9a9ba5e5 a locn:Address ;
+	locn:fullAddress "LUNGOLAGO DEI PESCATORI, Orbetello, 58015 (GROSSETO), Italy" ;
+	locn:postCode "58015" .
+
+sod17:8fdb728a7a9050679f22b28358a85675 a locn:Location , sod17onto:Comune ;
+	locn:geographicName "Orbetello" .
+
+sod17:10909062403 a org:FormalOrganization ;
+	rdfs:label "OSPEDALE DELLE COLLINE DELL'ALBEGNA" ;
+	org:identifier "10909062403" ;
+	locn:address sod17:0a6a15846f442c95093755f071c45b5e ;
+	locn:location sod17:8fdb728a7a9050679f22b28358a85675 , sod17:8d6a118e516920d5ee29031be95bb9c8 ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:0a6a15846f442c95093755f071c45b5e a locn:Address ;
+	locn:fullAddress "VIA N.CIACCI, 30, Orbetello, 58017 (GROSSETO), Italy" ;
+	locn:postCode "58017" .
+
+sod17:10609061301 a org:FormalOrganization ;
+	rdfs:label "OSPEDALE LIVORNO" ;
+	org:identifier "10609061301" ;
+	locn:address sod17:c63c76cb2b0a3940a4041f7244bdcc8f ;
+	locn:location sod17:5efb98cc2a44abbe2973aecc6cc85a58 , sod17:591423ff1352e2f3f21eedf691d927c1 ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:c63c76cb2b0a3940a4041f7244bdcc8f a locn:Address ;
+	locn:fullAddress "VIALE ALFIERI, Livorno, 57100 (LIVORNO), Italy" ;
+	locn:postCode "57100" .
+
+sod17:10309060602 a org:FormalOrganization ;
+	rdfs:label "SPEDALI RIUNITI" ;
+	org:identifier "10309060602" ;
+	locn:address sod17:e3b4b7f1a6357bf484329c7a799cb07c ;
+	locn:location sod17:9a237c509b3b6d5fd10b21cdb999ffc5 , sod17:c797b6f2c9a42df746ce078a9771c164 ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:e3b4b7f1a6357bf484329c7a799cb07c a locn:Address ;
+	locn:fullAddress "V. PACINI N. 17 S. MARCELLO, Pistoia, 51028 (PISTOIA), Italy" ;
+	locn:postCode "51028" .
+
+sod17:9a237c509b3b6d5fd10b21cdb999ffc5 a locn:Location , sod17onto:Comune ;
+	locn:geographicName "Pistoia" .
+
+sod17:10809064101 a org:FormalOrganization ;
+	rdfs:label "OSPEDALE NUOVO VALDARNO" ;
+	org:identifier "10809064101" ;
+	locn:address sod17:2011bc0c646c771fc871fd4d4965493a ;
+	locn:location sod17:d9dda09e54421dad442de4041eedcae6 , sod17:a33a2f2bad25d92ecf820a289c72bb8c ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:2011bc0c646c771fc871fd4d4965493a a locn:Address ;
+	locn:fullAddress "LOC. GRUCCIA, Montevarchi, 52025 (AREZZO), Italy" ;
+	locn:postCode "52025" .
+
+sod17:10609061401 a org:FormalOrganization ;
+	rdfs:label "OSPEDALE PIOMBINO" ;
+	org:identifier "10609061401" ;
+	locn:address sod17:8982f902c08e4d7011cc1d23c574ad4d ;
+	locn:location sod17:0119be2e28fed79fa165a647a327872c , sod17:591423ff1352e2f3f21eedf691d927c1 ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:8982f902c08e4d7011cc1d23c574ad4d a locn:Address ;
+	locn:fullAddress "VIA FORLANINI, 24, Piombino, 57025 (LIVORNO), Italy" ;
+	locn:postCode "57025" .
+
+sod17:0119be2e28fed79fa165a647a327872c a locn:Location , sod17onto:Comune ;
+	locn:geographicName "Piombino" .
+
+sod17:10609061501 a org:FormalOrganization ;
+	rdfs:label "OSPEDALE DI PORTOFERRAIO" ;
+	org:identifier "10609061501" ;
+	locn:address sod17:46a5c469f40efe5eaf5abe877d254edc ;
+	locn:location sod17:6cf70e572a234793573b4f5e4bd807fb , sod17:591423ff1352e2f3f21eedf691d927c1 ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:46a5c469f40efe5eaf5abe877d254edc a locn:Address ;
+	locn:fullAddress "LOC. S. ROCCO, Portoferraio, 57027 (LIVORNO), Italy" ;
+	locn:postCode "57027" .
+
+sod17:6cf70e572a234793573b4f5e4bd807fb a locn:Location , sod17onto:Comune ;
+	locn:geographicName "Portoferraio" .
+
+sod17:10909062301 a org:FormalOrganization ;
+	rdfs:label "OSPEDALE  S.ANDREA   MASSA MARITTIMA" ;
+	org:identifier "10909062301" ;
+	locn:address sod17:2068efe8c47c26d2f0895f414b4c0e26 ;
+	locn:location sod17:69e2a8b7844789fdbb64870c042cfdc8 , sod17:8d6a118e516920d5ee29031be95bb9c8 ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:2068efe8c47c26d2f0895f414b4c0e26 a locn:Address ;
+	locn:fullAddress "VIA RISORGIMENTO,43 - MASSA MARITTIMA, Massa Marittima, 58024 (GROSSETO), Italy" ;
+	locn:postCode "58024" .
+
+sod17:69e2a8b7844789fdbb64870c042cfdc8 a locn:Location , sod17onto:Comune ;
+	locn:geographicName "Massa Marittima" .
+
+sod17:10209060302 a org:FormalOrganization ;
+	rdfs:label "PRESIDIO OSPEDALIERO VALLE DEL SERCHIO" ;
+	org:identifier "10209060302" ;
+	locn:address sod17:d42a4ce4229ea00d339056b6d87ca34d ;
+	locn:location sod17:9586d213b08d084fc0f195ce59fd3fa0 , sod17:026e98799e3bea361eb7e3aa2ff51b56 ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:d42a4ce4229ea00d339056b6d87ca34d a locn:Address ;
+	locn:fullAddress "VIA FRATI-BARGA, Castelnuovo di Garfagnana, 55051 (LUCCA), Italy" ;
+	locn:postCode "55051" .
+
+sod17:9586d213b08d084fc0f195ce59fd3fa0 a locn:Location , sod17onto:Comune ;
+	locn:geographicName "Castelnuovo di Garfagnana" .
+
+sod17:10309060601 a org:FormalOrganization ;
+	rdfs:label "SPEDALI RIUNITI" ;
+	org:identifier "10309060601" ;
+	locn:address sod17:fcc2ec2ab928beaeeaa2356a00c9d42c ;
+	locn:location sod17:9a237c509b3b6d5fd10b21cdb999ffc5 , sod17:c797b6f2c9a42df746ce078a9771c164 ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:fcc2ec2ab928beaeeaa2356a00c9d42c a locn:Address ;
+	locn:fullAddress "Via Ciliegiole, 97, Pistoia, 51100 (PISTOIA), Italy" ;
+	locn:postCode "51100" .
+
+sod17:11109064203 a org:FormalOrganization ;
+	rdfs:label "Presidio Ospedaliero Asl 11 Empoli" ;
+	org:identifier "11109064203" ;
+	locn:address sod17:c11c11a30933c113592617f685727797 ;
+	locn:location sod17:0344ab6bc91d676637daf6609a0aa810 , sod17:7559e094e9195b309e67b8754e395f1d ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:c11c11a30933c113592617f685727797 a locn:Address ;
+	locn:fullAddress "Piazza Lavagnini, Empoli, 50054 (FIRENZE), Italy" ;
+	locn:postCode "50054" .
+
+sod17:10209060301 a org:FormalOrganization ;
+	rdfs:label "PRESIDIO OSPEDALIERO VALLE DEL SERCHIO" ;
+	org:identifier "10209060301" ;
+	locn:address sod17:306e035665fb5eb293c59f97a97f03b5 ;
+	locn:location sod17:9586d213b08d084fc0f195ce59fd3fa0 , sod17:026e98799e3bea361eb7e3aa2ff51b56 ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:306e035665fb5eb293c59f97a97f03b5 a locn:Address ;
+	locn:fullAddress "VIA DELL'OSPEDALE,1-CASTELNUOVO DI GARF., Castelnuovo di Garfagnana, 55032 (LUCCA), Italy" ;
+	locn:postCode "55032" .
+
+sod17:11109064201 a org:FormalOrganization ;
+	rdfs:label "Presidio Ospedaliero Asl 11 Empoli" ;
+	org:identifier "11109064201" ;
+	locn:address sod17:031bfa473bf1c369c05d8ce310cfe420 ;
+	locn:location sod17:0344ab6bc91d676637daf6609a0aa810 , sod17:7559e094e9195b309e67b8754e395f1d ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:031bfa473bf1c369c05d8ce310cfe420 a locn:Address ;
+	locn:fullAddress "Via Dei Mille, Empoli, 50051 (FIRENZE), Italy" ;
+	locn:postCode "50051" .
+
+sod17:11009062902 a org:FormalOrganization ;
+	rdfs:label "OSPEDALE FIORENTINO SUD-EST" ;
+	org:identifier "11009062902" ;
+	locn:address sod17:baa4c65f7cbb7e9deb908328f132858f ;
+	locn:location sod17:a36a829bf6331e9a7f5452a3cdc5b559 , sod17:7559e094e9195b309e67b8754e395f1d ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:baa4c65f7cbb7e9deb908328f132858f a locn:Address ;
+	locn:fullAddress "PIAZZA XXV APRILE 10, Bagno A Ripoli, 50063 (FIRENZE), Italy" ;
+	locn:postCode "50063" .
+
+sod17:a36a829bf6331e9a7f5452a3cdc5b559 a locn:Location , sod17onto:Comune ;
+	locn:geographicName "Bagno A Ripoli" .
+
+sod17:11109064202 a org:FormalOrganization ;
+	rdfs:label "Presidio Ospedaliero Asl 11 Empoli" ;
+	org:identifier "11109064202" ;
+	locn:address sod17:64fa7c70fc0f279210e29ab0364d5361 ;
+	locn:location sod17:0344ab6bc91d676637daf6609a0aa810 , sod17:7559e094e9195b309e67b8754e395f1d ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:64fa7c70fc0f279210e29ab0364d5361 a locn:Address ;
+	locn:fullAddress "Viale Boccaccio, Empoli, 50053 (FIRENZE), Italy" ;
+	locn:postCode "50053" .
+
+sod17:11009062901 a org:FormalOrganization ;
+	rdfs:label "OSPEDALE FIORENTINO SUD-EST" ;
+	org:identifier "11009062901" ;
+	locn:address sod17:66fc652f414d3130f381e3ccd7efcb37 ;
+	locn:location sod17:a36a829bf6331e9a7f5452a3cdc5b559 , sod17:7559e094e9195b309e67b8754e395f1d ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:66fc652f414d3130f381e3ccd7efcb37 a locn:Address ;
+	locn:fullAddress "VIA DELL'ANTELLA 58, Bagno A Ripoli, 50012 (FIRENZE), Italy" ;
+	locn:postCode "50012" .
+
+sod17:11209064001 a org:FormalOrganization ;
+	rdfs:label "OSPEDALE VERSILIA" ;
+	org:identifier "11209064001" ;
+	locn:address sod17:154f5be12af05bae39d64601f17f9c4b ;
+	locn:location sod17:cdc13c0206b59dca91d38f8cd8a75eb5 , sod17:026e98799e3bea361eb7e3aa2ff51b56 ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:154f5be12af05bae39d64601f17f9c4b a locn:Address ;
+	locn:fullAddress "VIA AURELIA, 335, Camaiore, 55043 (LUCCA), Italy" ;
+	locn:postCode "55043" .
+
+sod17:cdc13c0206b59dca91d38f8cd8a75eb5 a locn:Location , sod17onto:Comune ;
+	locn:geographicName "Camaiore" .
+
+sod17:10709063901 a org:FormalOrganization ;
+	rdfs:label "OSPEDALI RIUNITI DELLA VAL DI CHIANA" ;
+	org:identifier "10709063901" ;
+	locn:address sod17:5652be056cdf067faa01fc34cb3294c3 ;
+	locn:location sod17:f1f07f08dd51cade5a07c0a16bc6c59e , sod17:8d4e31d0e3718b3d505aca0fdc54029a ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:5652be056cdf067faa01fc34cb3294c3 a locn:Address ;
+	locn:fullAddress "VIA PROVINCIALE MONTEPULCIANO, 5, Montepulciano, 53045 (SIENA), Italy" ;
+	locn:postCode "53045" .
+
+sod17:f1f07f08dd51cade5a07c0a16bc6c59e a locn:Location , sod17onto:Comune ;
+	locn:geographicName "Montepulciano" .
+
+sod17:10109060101 a org:FormalOrganization ;
+	rdfs:label "Presidio Ospedaliero  Zona Lunigiana" ;
+	org:identifier "10109060101" ;
+	locn:address sod17:f4e1dc5dd0ba0b1e4bbc528fe658db46 ;
+	locn:location sod17:ce310deff11927aca36dcd33726d93ec , sod17:977d6b2f9ccf731576b36a81baee95d8 ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:f4e1dc5dd0ba0b1e4bbc528fe658db46 a locn:Address ;
+	locn:fullAddress "SALITA S.FRANCESCO 1, Fivizzano, 54013 (MASSA E CARRARA), Italy" ;
+	locn:postCode "54013" .
+
+sod17:11009063203 a org:FormalOrganization ;
+	rdfs:label "OSPEDALE FIORENTINO" ;
+	org:identifier "11009063203" ;
+	locn:address sod17:b6600d1786d5aaaeff7cfd2ac0774729 ;
+	locn:location sod17:db5333cce3d707fa54f29fd084174072 , sod17:7559e094e9195b309e67b8754e395f1d ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:b6600d1786d5aaaeff7cfd2ac0774729 a locn:Address ;
+	locn:fullAddress "VIA TORRE GALLI, 3, Firenze, 50143 (FIRENZE), Italy" ;
+	locn:postCode "50143" .
+
+sod17:10109060203 a org:FormalOrganization ;
+	rdfs:label "Presidio Ospedaliero Zona  Apuana" ;
+	org:identifier "10109060203" ;
+	locn:address sod17:eab0320525a8336b4d88f1fb3068360e ;
+	locn:location sod17:f50cf95b3a3168dae1abb971c693e449 , sod17:977d6b2f9ccf731576b36a81baee95d8 ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:eab0320525a8336b4d88f1fb3068360e a locn:Address ;
+	locn:fullAddress "VIA ORECCHIA, Carrara, 54100 (MASSA E CARRARA), Italy" ;
+	locn:postCode "54100" .
+
+sod17:10509061001 a org:FormalOrganization ;
+	rdfs:label "PRESIDIO OSPEDALIERO \"FELICE LOTTI\"" ;
+	org:identifier "10509061001" ;
+	locn:address sod17:349e6ff48111b1d0ae22ccaf2e273ac5 ;
+	locn:location sod17:931bd84d75f3f4eb3b9a5756c260efb1 , sod17:07b1a313034c67e7644f3e1a6205d205 ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:349e6ff48111b1d0ae22ccaf2e273ac5 a locn:Address ;
+	locn:fullAddress "VIA ROMA,180, Pontedera, 56025 (PISA), Italy" ;
+	locn:postCode "56025" .
+
+sod17:931bd84d75f3f4eb3b9a5756c260efb1 a locn:Location , sod17onto:Comune ;
+	locn:geographicName "Pontedera" .
+
+sod17:10709063701 a org:FormalOrganization ;
+	rdfs:label "PRESIDIO OSPEDALIERO AMIATA SENESE" ;
+	org:identifier "10709063701" ;
+	locn:address sod17:940ab559952c06c43f914f30dc29046f ;
+	locn:location sod17:88be0f9cdbe5747e39cc8733692d86fa , sod17:8d4e31d0e3718b3d505aca0fdc54029a ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:940ab559952c06c43f914f30dc29046f a locn:Address ;
+	locn:fullAddress "VIA TRENTO, Abbadia San Salvatore, 53021 (SIENA), Italy" ;
+	locn:postCode "53021" .
+
+sod17:88be0f9cdbe5747e39cc8733692d86fa a locn:Location , sod17onto:Comune ;
+	locn:geographicName "Abbadia San Salvatore" .
+
+sod17:10209060401 a org:FormalOrganization ;
+	rdfs:label "PRESIDIO OSPEDALIERO SAN LUCA" ;
+	org:identifier "10209060401" ;
+	locn:address sod17:aa0c4652f25f7bf2b3b0e6827a131dbf ;
+	locn:location sod17:3dd500594e052d4876d8bdb5785cdfc9 , sod17:026e98799e3bea361eb7e3aa2ff51b56 ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:aa0c4652f25f7bf2b3b0e6827a131dbf a locn:Address ;
+	locn:fullAddress "Via Guglielmo Lippi Francesconi, Lucca, 55100 (LUCCA), Italy" ;
+	locn:postCode "55100" .
+
+sod17:10509060901 a org:FormalOrganization ;
+	rdfs:label "PRESIDIO OSPEDALIERO \"S.MARIA MADDALENA\"" ;
+	org:identifier "10509060901" ;
+	locn:address sod17:fb368173f823abf4d979ce18d888a82c ;
+	locn:location sod17:50540f58cafce23cc605c9befadc6935 , sod17:07b1a313034c67e7644f3e1a6205d205 ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:fb368173f823abf4d979ce18d888a82c a locn:Address ;
+	locn:fullAddress "BORGO SAN LAZZARO,5, Volterra, 56048 (PISA), Italy" ;
+	locn:postCode "56048" .
+
+sod17:11009063201 a org:FormalOrganization ;
+	rdfs:label "OSPEDALE FIORENTINO" ;
+	org:identifier "11009063201" ;
+	locn:address sod17:5f649b81433b331975cf4741c638b479 ;
+	locn:location sod17:db5333cce3d707fa54f29fd084174072 , sod17:7559e094e9195b309e67b8754e395f1d ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:5f649b81433b331975cf4741c638b479 a locn:Address ;
+	locn:fullAddress "P.ZZA S. M. NUOVA, 1, Firenze, 50122 (FIRENZE), Italy" ;
+	locn:postCode "50122" .
+
+sod17:10709063401 a org:FormalOrganization ;
+	rdfs:label "SERVIZIO PSICHIATRICO DIAGNOSI E CURA" ;
+	org:identifier "10709063401" ;
+	locn:address sod17:67d8dce5012e894c27978bc143f1bacc ;
+	locn:location sod17:934634023c7f7a663fdc994504f14b4a , sod17:8d4e31d0e3718b3d505aca0fdc54029a ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:67d8dce5012e894c27978bc143f1bacc a locn:Address ;
+	locn:fullAddress "P.TA TUFI, Siena, 53100 (SIENA), Italy" ;
+	locn:postCode "53100" .
+
+sod17:10509061002 a org:FormalOrganization ;
+	rdfs:label "PRESIDIO OSPEDALIERO \"FELICE LOTTI\"" ;
+	org:identifier "10509061002" ;
+	locn:address sod17:f9994b2aea5eeb0444d4cde833cdc4fb ;
+	locn:location sod17:931bd84d75f3f4eb3b9a5756c260efb1 , sod17:07b1a313034c67e7644f3e1a6205d205 ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:f9994b2aea5eeb0444d4cde833cdc4fb a locn:Address ;
+	locn:fullAddress "Via Roma , Pontedera, 56126 (PISA), Italy" ;
+	locn:postCode "56126" .
+
+sod17:11009021601 a org:FormalOrganization ;
+	rdfs:label "VILLA DEI PINI S.R.L." ;
+	org:identifier "11009021601" ;
+	locn:address sod17:98f553fadfb2e8577ff6ffdb5a8918fd ;
+	locn:location sod17:db5333cce3d707fa54f29fd084174072 , sod17:7559e094e9195b309e67b8754e395f1d ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:98f553fadfb2e8577ff6ffdb5a8918fd a locn:Address ;
+	locn:fullAddress "VIA UGO FOSCOLO 78, Firenze, 50124 (FIRENZE), Italy" ;
+	locn:postCode "50124" .
+
+sod17:11009022901 a org:FormalOrganization ;
+	rdfs:label "VILLA DELLE TERME SPA" ;
+	org:identifier "11009022901" ;
+	locn:address sod17:bf82fd2e43b3cd18225f4d4b19d28f1e ;
+	locn:location sod17:ee039152998f7652e42028e9f88dd5d0 , sod17:7559e094e9195b309e67b8754e395f1d ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:bf82fd2e43b3cd18225f4d4b19d28f1e a locn:Address ;
+	locn:fullAddress "VIA CASSIA 217, Impruneta, 50023 (FIRENZE), Italy" ;
+	locn:postCode "50023" .
+
+sod17:ee039152998f7652e42028e9f88dd5d0 a locn:Location , sod17onto:Comune ;
+	locn:geographicName "Impruneta" .
+
+sod17:11009022701 a org:FormalOrganization ;
+	rdfs:label "VILLA DELLE TERME SPA" ;
+	org:identifier "11009022701" ;
+	locn:address sod17:7ef348757c6f562d13a9a4cbbd0ba690 ;
+	locn:location sod17:db5333cce3d707fa54f29fd084174072 , sod17:7559e094e9195b309e67b8754e395f1d ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:7ef348757c6f562d13a9a4cbbd0ba690 a locn:Address ;
+	locn:fullAddress "VIA MARCONI 4, Firenze, 50131 (FIRENZE), Italy" ;
+	locn:postCode "50131" .
+
+sod17:11009021501 a org:FormalOrganization ;
+	rdfs:label "VILLA MARIA BEATRICE HOSPITAL SRL" ;
+	org:identifier "11009021501" ;
+	locn:address sod17:15171fa16445c4ccf3ba63b21cd14e81 ;
+	locn:location sod17:db5333cce3d707fa54f29fd084174072 , sod17:7559e094e9195b309e67b8754e395f1d ;
+	cpsv:provides <http://stamina-project.org/codes/nacer2/class/86.10> .
+
+sod17:15171fa16445c4ccf3ba63b21cd14e81 a locn:Address ;
+	locn:fullAddress "VIA A. MANZONI 12, Firenze, 50121 (FIRENZE), Italy" ;
+	locn:postCode "50121" .

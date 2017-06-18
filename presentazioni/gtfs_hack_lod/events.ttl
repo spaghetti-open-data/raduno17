@@ -1,0 +1,27 @@
+@prefix :      <http://www.spaghettiopendata.org/odfest17/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix dbpedia: <http://it.dbpedia.org/resource/> .
+@prefix schema: <http://schema.org/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+:event03  a               schema:Event , owl:NamedIndividual ;
+        rdfs:comment      "Roséxpo: a Lecce la 4°edizione del salone internazionale Eventi a Lecce" ;
+        rdfs:label        "evento 3" ;
+        schema:address    dbpedia:Castello_di_Lecce ;
+        schema:endDate    "10 Giugno"^^xsd:date ;
+        schema:startDate  "8 Giugno"^^xsd:date .
+
+:event02  a               schema:Event , owl:NamedIndividual ;
+        rdfs:comment      "Rally del Salento" ;
+        rdfs:label        "evento 2" ;
+        schema:endDate    "4 Giugno"^^xsd:date ;
+        schema:startDate  "3 Giugno"^^xsd:date .
+
+<http://www.spaghettiopendata.org/odfest17/#event01>
+        a                 schema:Event , owl:NamedIndividual ;
+        rdfs:comment      "Salento per Gaber: il signor G all'Ombra del Barocco" ;
+        rdfs:label        "evento 1" ;
+        schema:startDate  "5 Giugno"^^xsd:date ;
+        schema:startTime  "9.00"^^xsd:time .

@@ -1,0 +1,65 @@
+PREFIX sod17: <http://www.spaghettiopendata.org/sod2017/resources#>
+PREFIX sod17onto: <http://www.spaghettiopendata.org/sod2017/ontology#>
+PREFIX org: <http://www.w3.org/ns/org#>
+PREFIX locn: <http://www.w3.org/ns/locn#>
+PREFIX gr:  <http://purl.org/goodrelations/v1#>
+PREFIX cpsv: <http://purl.org/vocab/cpsv#>
+PREFIX nacer_cls: <http://stamina-project.org/codes/nacer2/class/>
+PREFIX nacer_div: <http://stamina-project.org/codes/nacer2/division/>
+PREFIX nacer_grp: <http://stamina-project.org/codes/nacer2/group/>
+PREFIX schema: <http://schema.org/>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dbpedia: <http://dbpedia.org/resource/>
+PREFIX dbpo: <http://dbpedia.org/ontology/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX db: <http://dbpedia.org/>
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?h ?id ?label ?addrStr ?comuneStr ?provStr ?serviceTypeStr ?private ?lat ?long
+{
+  ?h
+     rdfs:label ?label;
+     org:identifier ?id;
+     cpsv:provides ?serviceType;
+     locn:address ?addr;
+     locn:location ?comune, ?prov;
+  .
+
+  ?serviceType skos:prefLabel ?serviceTypeLiteral
+  BIND ( STR ( ?serviceTypeLiteral ) AS ?serviceTypeStr )
+
+  ?addr
+    locn:fullAddress ?addrStr
+  .
+
+  ?comune
+    a sod17onto:Comune;
+    locn:geographicName ?comuneStr
+  .
+
+  ?prov
+    a dbpo:Province;
+    locn:geographicName|rdfs:label ?provStr
+  .
+
+  OPTIONAL
+  {
+    ?h locn:geometry ?geo.
+    ?geo
+      geo:lat ?lat;
+      geo:long ?long
+    .
+  }
+
+  { ?h a gr:BusinessEntity. BIND ( "Private" AS ?private ) }
+  UNION { ?h a schema:GovernmentOrganization. BIND ( "Public" AS ?private ) }
+  UNION {
+   ?h a ?typeUri.
+   NOT EXISTS { ?h a ?typeUri1. FILTER ( ?typeUri1 IN ( gr:BusinessEntity, schema:GovernmentOrganization ) ) }
+   BIND ( STR ( "Unknown" ) AS ?private ).
+  }
+
+}
+ORDER BY ?provStr ?label
